@@ -1,0 +1,67 @@
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CAA_1  and  CAM_2 
+REMARK    2  A    between atoms: CAM_2  and  CAJ_4 
+REMARK    3  A    between atoms: CAJ_4  and  CAH_5 
+REMARK    4  A    between atoms: CAH_5  and  CAI_6 
+REMARK    5  A    between atoms: CAI_6  and  CAK_7 
+REMARK    6  A    between atoms: CAK_7  and  N1_8 
+REMARK    7  A    between atoms: N7_12  and  CAB_13 
+REMARK    8  A    between atoms: N3_17  and  CAC_18 
+ROOT
+ATOM      1  N1  PNX d           0.991   5.463  21.091  0.00  0.00    -0.264 N 
+ATOM      2  C6  PNX d           0.120   4.439  21.530  0.00  0.00     0.282 A 
+ATOM      3  O6  PNX d          -0.932   4.746  22.093  0.00  0.00    -0.265 OA
+ATOM      4  C5  PNX d           0.497   3.089  21.312  0.00  0.00     0.151 A 
+ATOM      5  N7  PNX d          -0.111   1.922  21.586  0.00  0.00    -0.338 N 
+ATOM      6  C8  PNX d           0.658   0.907  21.151  0.00  0.00     0.068 A 
+ATOM      7  N9  PNX d           1.778   1.415  20.582  0.00  0.00    -0.223 NA
+ATOM      8  C4  PNX d           1.708   2.756  20.659  0.00  0.00     0.167 A 
+ATOM      9  N3  PNX d           2.596   3.768  20.240  0.00  0.00    -0.286 N 
+ATOM     10  C2  PNX d           2.246   5.088  20.483  0.00  0.00     0.333 A 
+ATOM     11  O2  PNX d           3.025   5.950  20.104  0.00  0.00    -0.246 OA
+ATOM     12  H15 PNX d           0.419  -0.152  21.242  0.00  0.00     0.143 H 
+ENDROOT
+BRANCH   1  13
+ATOM     13  CAK PNX d           0.640   6.927  21.345  0.00  0.00     0.007 C 
+ATOM     14  H10 PNX d           0.031   7.008  22.258  0.00  0.00     0.065 H 
+ATOM     15  H11 PNX d           1.564   7.513  21.468  0.00  0.00     0.065 H 
+BRANCH  13  16
+ATOM     16  CAI PNX d          -0.177   7.478  20.112  0.00  0.00    -0.049 C 
+ATOM     17  H8  PNX d           0.124   6.908  19.220  0.00  0.00     0.035 H 
+ATOM     18  H9  PNX d          -1.246   7.314  20.308  0.00  0.00     0.035 H 
+BRANCH  16  19
+ATOM     19  CAH PNX d           0.038   8.998  19.816  0.00  0.00    -0.057 C 
+ATOM     20  H6  PNX d           0.061   9.567  20.757  0.00  0.00     0.033 H 
+ATOM     21  H7  PNX d           0.984   9.148  19.275  0.00  0.00     0.033 H 
+BRANCH  19  22
+ATOM     22  CAJ PNX d          -1.147   9.457  18.949  0.00  0.00    -0.010 C 
+ATOM     23  H4  PNX d          -1.159   8.868  18.020  0.00  0.00     0.044 H 
+ATOM     24  H5  PNX d          -2.082   9.287  19.504  0.00  0.00     0.044 H 
+BRANCH  22  25
+ATOM     25  CAM PNX d          -1.036  10.978  18.589  0.00  0.00     0.123 C 
+ATOM     26  OAD PNX d          -0.519  11.774  19.366  0.00  0.00    -0.298 OA
+BRANCH  25  27
+ATOM     27  CAA PNX d          -1.616  11.485  17.292  0.00  0.00    -0.021 C 
+ATOM     28  H1  PNX d          -1.478  12.575  17.231  0.00  0.00     0.037 H 
+ATOM     29  H2  PNX d          -2.689  11.248  17.253  0.00  0.00     0.037 H 
+ATOM     30  H3  PNX d          -1.102  11.003  16.447  0.00  0.00     0.037 H 
+ENDBRANCH  25  27
+ENDBRANCH  22  25
+ENDBRANCH  19  22
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH   1  13
+BRANCH   9  31
+ATOM     31  CAC PNX d           3.910   3.466  19.545  0.00  0.00    -0.008 C 
+ATOM     32  H16 PNX d           4.023   2.377  19.432  0.00  0.00     0.057 H 
+ATOM     33  H17 PNX d           4.742   3.861  20.147  0.00  0.00     0.057 H 
+ATOM     34  H18 PNX d           3.917   3.941  18.553  0.00  0.00     0.057 H 
+ENDBRANCH   9  31
+BRANCH   5  35
+ATOM     35  CAB PNX d          -1.436   1.805  22.263  0.00  0.00    -0.013 C 
+ATOM     36  H12 PNX d          -1.821   2.810  22.493  0.00  0.00     0.057 H 
+ATOM     37  H13 PNX d          -1.323   1.233  23.196  0.00  0.00     0.057 H 
+ATOM     38  H14 PNX d          -2.143   1.286  21.599  0.00  0.00     0.057 H 
+ENDBRANCH   5  35
+TORSDOF 8

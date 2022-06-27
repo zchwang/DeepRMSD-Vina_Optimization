@@ -1,0 +1,71 @@
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CAU_21  and  OAD_4 
+REMARK    2  A    between atoms: CAV_22  and  OAE_5 
+REMARK    3  A    between atoms: CAW_23  and  OAF_6 
+REMARK    4  A    between atoms: CAH_8  and  CAG_7 
+REMARK    5  A    between atoms: CAG_7  and  CAQ_17 
+REMARK    6  A    between atoms: CAS_19  and  CAH_8 
+REMARK       I    between atoms: CAQ_17  and  NAP_16 
+REMARK    7  A    between atoms: NAP_16  and  CAT_20 
+REMARK    8  A    between atoms: CAW_23  and  CAR_18 
+ROOT
+ATOM      1  CAH RJP d          28.462  27.845  -2.126  0.00  0.00    -0.034 C 
+ATOM      2  H6  RJP d          29.253  28.075  -1.398  0.00  0.00     0.040 H 
+ATOM      3  H7  RJP d          27.637  27.322  -1.619  0.00  0.00     0.040 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  CAG RJP d          29.039  26.904  -3.145  0.00  0.00     0.013 C 
+ATOM      5  H4  RJP d          29.880  27.394  -3.659  0.00  0.00     0.047 H 
+ATOM      6  H5  RJP d          28.263  26.641  -3.879  0.00  0.00     0.047 H 
+BRANCH   4   7
+ATOM      7  CAQ RJP d          29.523  25.671  -2.478  0.00  0.00     0.222 C 
+ATOM      8  OAA RJP d          30.035  24.770  -3.153  0.00  0.00    -0.273 OA
+ATOM      9  NAP RJP d          29.176  25.696  -1.175  0.00  0.00    -0.327 N 
+ATOM     10  H16 RJP d          28.771  26.547  -0.839  0.00  0.00     0.169 HD
+BRANCH   9  11
+ATOM     11  CAT RJP d          29.318  24.686  -0.258  0.00  0.00     0.034 A 
+ATOM     12  CAM RJP d          29.925  24.936   0.989  0.00  0.00    -0.057 A 
+ATOM     13  CAK RJP d          30.076  23.892   1.914  0.00  0.00    -0.081 A 
+ATOM     14  H12 RJP d          30.274  25.933   1.233  0.00  0.00     0.086 H 
+ATOM     15  CAJ RJP d          29.576  22.636   1.558  0.00  0.00    -0.083 A 
+ATOM     16  H10 RJP d          30.562  24.054   2.870  0.00  0.00     0.083 H 
+ATOM     17  CAL RJP d          28.951  22.395   0.313  0.00  0.00    -0.081 A 
+ATOM     18  H9  RJP d          29.672  21.816   2.262  0.00  0.00     0.083 H 
+ATOM     19  CAN RJP d          28.817  23.430  -0.622  0.00  0.00    -0.057 A 
+ATOM     20  H11 RJP d          28.573  21.406   0.081  0.00  0.00     0.083 H 
+ATOM     21  H13 RJP d          28.346  23.265  -1.585  0.00  0.00     0.086 H 
+ENDBRANCH   9  11
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  CAS RJP d          27.918  29.167  -2.652  0.00  0.00    -0.049 C 
+ATOM     23  CAI RJP d          28.406  30.371  -2.249  0.00  0.00    -0.055 C 
+ATOM     24  CAW RJP d          27.830  31.681  -2.783  0.00  0.00     0.166 C 
+ATOM     25  H8  RJP d          29.224  30.401  -1.531  0.00  0.00     0.082 H 
+ATOM     26  CAO RJP d          27.177  31.508  -4.183  0.00  0.00     0.003 C 
+ATOM     27  CAU RJP d          26.198  30.303  -4.126  0.00  0.00     0.067 C 
+ATOM     28  H14 RJP d          26.626  32.421  -4.451  0.00  0.00     0.042 H 
+ATOM     29  H15 RJP d          27.957  31.317  -4.935  0.00  0.00     0.042 H 
+ATOM     30  CAV RJP d          26.834  29.070  -3.468  0.00  0.00     0.082 C 
+ATOM     31  H17 RJP d          25.396  30.609  -3.439  0.00  0.00     0.087 H 
+ATOM     32  H18 RJP d          27.423  28.808  -4.359  0.00  0.00     0.094 H 
+BRANCH  24  33
+ATOM     33  OAF RJP d          26.772  32.127  -1.822  0.00  0.00    -0.375 OA
+ATOM     34  H3  RJP d          26.393  32.943  -2.127  0.00  0.00     0.211 HD
+ENDBRANCH  24  33
+BRANCH  24  35
+ATOM     35  CAR RJP d          28.884  32.751  -2.817  0.00  0.00     0.213 C 
+ATOM     36  OAB RJP d          29.391  32.942  -3.954  0.00  0.00    -0.645 OA
+ATOM     37  OAC RJP d          29.251  33.323  -1.748  0.00  0.00    -0.645 OA
+ENDBRANCH  24  35
+BRANCH  27  38
+ATOM     38  OAD RJP d          25.540  30.065  -5.376  0.00  0.00    -0.393 OA
+ATOM     39  H1  RJP d          25.218  29.171  -5.398  0.00  0.00     0.210 HD
+ENDBRANCH  27  38
+BRANCH  30  40
+ATOM     40  OAE RJP d          26.153  27.902  -3.434  0.00  0.00    -0.389 OA
+ATOM     41  H2  RJP d          25.223  28.077  -3.513  0.00  0.00     0.210 HD
+ENDBRANCH  30  40
+ENDBRANCH   1  22
+TORSDOF 8

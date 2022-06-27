@@ -1,0 +1,47 @@
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  N1_2 
+REMARK    2  A    between atoms: C1_1  and  C9_13 
+REMARK    3  A    between atoms: C9_13  and  C10_14 
+REMARK    4  A    between atoms: C9_13  and  N3_17 
+ROOT
+ATOM      1  N1  CPW d          20.068  12.552  57.911  0.00  0.00    -0.300 N 
+ATOM      2  C2  CPW d          18.815  11.830  58.253  0.00  0.00     0.329 A 
+ATOM      3  N2  CPW d          18.844  10.476  58.280  0.00  0.00    -0.275 N 
+ATOM      4  C3  CPW d          21.206  11.804  57.564  0.00  0.00     0.028 A 
+ATOM      5  O1  CPW d          17.812  12.531  58.492  0.00  0.00    -0.246 OA
+ATOM      6  C4  CPW d          21.198  10.442  57.577  0.00  0.00     0.033 A 
+ATOM      7  C5  CPW d          19.961   9.724  57.983  0.00  0.00     0.257 A 
+ATOM      8  O2  CPW d          19.961   8.481  58.060  0.00  0.00    -0.267 OA
+ATOM      9  C6  CPW d          22.574  12.368  57.212  0.00  0.00    -0.025 A 
+ATOM     10  C7  CPW d          23.436  11.108  56.941  0.00  0.00    -0.056 A 
+ATOM     11  C8  CPW d          22.549   9.866  57.250  0.00  0.00    -0.034 A 
+ATOM     12  H3  CPW d          18.005   9.993  58.530  0.00  0.00     0.173 HD
+ATOM     13  H4  CPW d          22.984  12.951  58.050  0.00  0.00     0.042 H 
+ATOM     14  H5  CPW d          22.516  13.003  56.317  0.00  0.00     0.042 H 
+ATOM     15  H6  CPW d          24.322  11.111  57.594  0.00  0.00     0.034 H 
+ATOM     16  H7  CPW d          23.756  11.090  55.889  0.00  0.00     0.034 H 
+ATOM     17  H8  CPW d          22.487   9.204  56.374  0.00  0.00     0.040 H 
+ATOM     18  H9  CPW d          22.950   9.305  58.107  0.00  0.00     0.040 H 
+ENDROOT
+BRANCH   1  19
+ATOM     19  C1  CPW d          20.046  14.009  57.834  0.00  0.00     0.040 C 
+ATOM     20  H1  CPW d          19.045  14.334  57.516  0.00  0.00     0.069 H 
+ATOM     21  H2  CPW d          20.791  14.339  57.096  0.00  0.00     0.069 H 
+BRANCH  19  22
+ATOM     22  C9  CPW d          20.376  14.661  59.210  0.00  0.00     0.198 C 
+ATOM     23  H10 CPW d          21.380  14.333  59.517  0.00  0.00     0.103 H 
+BRANCH  22  24
+ATOM     24  C10 CPW d          20.445  16.201  58.975  0.00  0.00     0.206 C 
+ATOM     25  O3  CPW d          21.543  16.712  58.632  0.00  0.00    -0.646 OA
+ATOM     26  O4  CPW d          19.365  16.840  59.188  0.00  0.00    -0.646 OA
+ENDBRANCH  22  24
+BRANCH  22  27
+ATOM     27  N3  CPW d          19.428  14.179  60.280  0.00  0.00    -0.064 N 
+ATOM     28  H11 CPW d          19.504  13.178  60.371  0.00  0.00     0.275 HD
+ATOM     29  H12 CPW d          18.484  14.422  60.026  0.00  0.00     0.275 HD
+ATOM     30  H13 CPW d          19.663  14.615  61.158  0.00  0.00     0.275 HD
+ENDBRANCH  22  27
+ENDBRANCH  19  22
+ENDBRANCH   1  19
+TORSDOF 4

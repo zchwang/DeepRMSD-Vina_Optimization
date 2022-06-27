@@ -1,0 +1,48 @@
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C4_7  and  S_1 
+REMARK    2  A    between atoms: S_1  and  N3S_18 
+REMARK       I    between atoms: N'_2  and  C7_10 
+REMARK    3  A    between atoms: C1'_14  and  N'_2 
+REMARK    4  A    between atoms: C7_10  and  C1_4 
+REMARK    5  A    between atoms: C1'_14  and  C2'_16 
+ROOT
+ATOM      1  C1  RYJ d          16.220   4.278  13.961  0.00  0.00     0.032 A 
+ATOM      2  C2  RYJ d          17.465   2.651  15.185  0.00  0.00    -0.059 A 
+ATOM      3  C3  RYJ d          17.423   3.734  14.247  0.00  0.00    -0.066 A 
+ATOM      4  C4  RYJ d          16.286   2.041  15.707  0.00  0.00     0.079 A 
+ATOM      5  C5  RYJ d          15.074   3.749  14.507  0.00  0.00    -0.066 A 
+ATOM      6  C6  RYJ d          15.074   2.660  15.368  0.00  0.00    -0.059 A 
+ATOM      7  H2  RYJ d          18.431   2.281  15.510  0.00  0.00     0.085 H 
+ATOM      8  H3  RYJ d          18.329   4.105  13.782  0.00  0.00     0.085 H 
+ATOM      9  H4  RYJ d          14.124   4.205  14.253  0.00  0.00     0.085 H 
+ATOM     10  H5  RYJ d          14.141   2.290  15.777  0.00  0.00     0.085 H 
+ENDROOT
+BRANCH   1  11
+ATOM     11  C7  RYJ d          16.155   5.426  12.995  0.00  0.00     0.251 C 
+ATOM     12  N'  RYJ d          17.178   6.248  12.851  0.00  0.00    -0.348 N 
+ATOM     13  H1  RYJ d          17.987   6.136  13.429  0.00  0.00     0.163 HD
+ATOM     14  O'  RYJ d          15.086   5.630  12.356  0.00  0.00    -0.268 OA
+BRANCH  12  15
+ATOM     15  C1' RYJ d          17.141   7.327  11.851  0.00  0.00     0.086 C 
+ATOM     16  H6  RYJ d          16.288   7.991  12.053  0.00  0.00     0.077 H 
+ATOM     17  H7  RYJ d          17.040   6.896  10.844  0.00  0.00     0.077 H 
+BRANCH  15  18
+ATOM     18  C2' RYJ d          18.450   8.120  11.947  0.00  0.00     0.403 C 
+ATOM     19  F2' RYJ d          19.552   7.379  11.716  0.00  0.00    -0.169 F 
+ATOM     20  F2' RYJ d          18.741   8.586  13.131  0.00  0.00    -0.169 F 
+ATOM     21  F2' RYJ d          18.401   9.108  11.056  0.00  0.00    -0.169 F 
+ENDBRANCH  15  18
+ENDBRANCH  12  15
+ENDBRANCH   1  11
+BRANCH   4  22
+ATOM     22  S   RYJ d          16.383   0.726  16.766  0.00  0.00     0.256 S 
+ATOM     23  O1S RYJ d          17.758   0.273  16.756  0.00  0.00    -0.201 OA
+ATOM     24  O2S RYJ d          15.434  -0.415  16.235  0.00  0.00    -0.201 OA
+BRANCH  22  25
+ATOM     25  N3S RYJ d          15.879   1.270  18.042  0.00  0.00    -0.324 N 
+ATOM     26  H8  RYJ d          16.519   1.632  18.720  0.00  0.00     0.169 HD
+ATOM     27  H9  RYJ d          14.896   1.276  18.230  0.00  0.00     0.169 HD
+ENDBRANCH  22  25
+ENDBRANCH   4  22
+TORSDOF 5

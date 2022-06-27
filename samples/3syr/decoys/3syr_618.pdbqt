@@ -1,0 +1,56 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1'_10  and  C1'_9 
+REMARK    2  A    between atoms: C2'_11  and  O2'_12 
+REMARK    3  A    between atoms: C3'_13  and  O3'_14 
+REMARK    4  A    between atoms: C4'_15  and  O4'_16 
+REMARK    5  A    between atoms: C5'_17  and  C6'_19 
+REMARK    6  A    between atoms: C6'_19  and  O6'_20 
+ROOT
+ATOM      1  C1' GPK d          34.473  23.372  27.367  0.00  0.00     0.141 C 
+ATOM      2  C2' GPK d          35.223  23.955  26.163  0.00  0.00     0.105 C 
+ATOM      3  C3' GPK d          34.254  23.973  24.969  0.00  0.00     0.091 C 
+ATOM      4  C4' GPK d          33.603  22.615  24.751  0.00  0.00     0.089 C 
+ATOM      5  C5' GPK d          33.029  22.027  26.056  0.00  0.00     0.088 C 
+ATOM      6  O5' GPK d          34.036  22.033  27.060  0.00  0.00    -0.353 OA
+ATOM      7  H3  GPK d          33.583  23.996  27.532  0.00  0.00     0.123 H 
+ATOM      8  H4  GPK d          36.084  23.314  25.921  0.00  0.00     0.093 H 
+ATOM      9  H6  GPK d          33.462  24.705  25.184  0.00  0.00     0.091 H 
+ATOM     10  H8  GPK d          34.365  21.916  24.376  0.00  0.00     0.091 H 
+ATOM     11  H10 GPK d          32.180  22.653  26.369  0.00  0.00     0.090 H 
+ENDROOT
+BRANCH   1  12
+ATOM     12  N1' GPK d          35.256  23.365  28.644  0.00  0.00    -0.277 N 
+ATOM     13  C1  GPK d          36.472  22.645  28.731  0.00  0.00     0.030 C 
+ATOM     14  C2  GPK d          37.216  22.727  29.898  0.00  0.00     0.199 C 
+ATOM     15  H1  GPK d          36.816  22.037  27.896  0.00  0.00     0.117 H 
+ATOM     16  F1  GPK d          38.325  21.987  30.026  0.00  0.00    -0.199 F 
+ATOM     17  C3  GPK d          36.808  23.592  30.916  0.00  0.00     0.289 C 
+ATOM     18  O3  GPK d          37.495  23.681  31.949  0.00  0.00    -0.265 OA
+ATOM     19  N4  GPK d          35.690  24.346  30.779  0.00  0.00    -0.273 N 
+ATOM     20  C5  GPK d          34.932  24.284  29.658  0.00  0.00     0.331 C 
+ATOM     21  H2  GPK d          35.420  24.960  31.520  0.00  0.00     0.173 HD
+ATOM     22  O5  GPK d          33.872  24.947  29.546  0.00  0.00    -0.246 OA
+ENDBRANCH   1  12
+BRANCH   2  23
+ATOM     23  O2' GPK d          35.699  25.271  26.475  0.00  0.00    -0.388 OA
+ATOM     24  H5  GPK d          34.970  25.881  26.460  0.00  0.00     0.210 HD
+ENDBRANCH   2  23
+BRANCH   3  25
+ATOM     25  O3' GPK d          34.924  24.372  23.789  0.00  0.00    -0.390 OA
+ATOM     26  H7  GPK d          34.398  24.137  23.033  0.00  0.00     0.210 HD
+ENDBRANCH   3  25
+BRANCH   5  27
+ATOM     27  C6' GPK d          32.566  20.566  25.963  0.00  0.00     0.043 C 
+ATOM     28  H11 GPK d          32.695  20.084  26.944  0.00  0.00     0.078 H 
+ATOM     29  H12 GPK d          33.177  20.042  25.214  0.00  0.00     0.078 H 
+BRANCH  27  30
+ATOM     30  O6' GPK d          31.182  20.487  25.580  0.00  0.00    -0.398 OA
+ATOM     31  H13 GPK d          30.920  19.575  25.529  0.00  0.00     0.209 HD
+ENDBRANCH  27  30
+ENDBRANCH   5  27
+BRANCH   4  32
+ATOM     32  O4' GPK d          32.590  22.775  23.744  0.00  0.00    -0.390 OA
+ATOM     33  H9  GPK d          32.949  23.259  23.010  0.00  0.00     0.210 HD
+ENDBRANCH   4  32
+TORSDOF 6
