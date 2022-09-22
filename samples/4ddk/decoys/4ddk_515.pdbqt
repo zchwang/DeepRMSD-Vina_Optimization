@@ -1,0 +1,25 @@
+REMARK  1 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CAI_2  and  CAJ_4 
+ROOT
+ATOM      1  CAJ Q0H d   N     -14.476  -0.995  -0.548  0.00  0.00     0.043 A 
+ATOM      2  CAE Q0H d   N     -15.557  -1.037  -1.453  0.00  0.00    -0.031 A 
+ATOM      3  CAL Q0H d   N     -16.801  -0.580  -1.095  0.00  0.00     0.106 A 
+ATOM      4  OAH Q0H d   N     -17.944  -0.531  -1.852  0.00  0.00    -0.323 OA
+ATOM      5  CAF Q0H d   N     -18.974   0.122  -1.011  0.00  0.00     0.115 C 
+ATOM      6  OAG Q0H d   N     -18.381   0.300   0.334  0.00  0.00    -0.323 OA
+ATOM      7  CAK Q0H d   N     -17.043  -0.070   0.162  0.00  0.00     0.105 A 
+ATOM      8  CAD Q0H d   N     -16.043  -0.036   1.066  0.00  0.00    -0.047 A 
+ATOM      9  CAC Q0H d   N     -14.763  -0.489   0.737  0.00  0.00    -0.064 A 
+ATOM     10  H1  Q0H d   N     -15.403  -1.437  -2.448  0.00  0.00     0.089 H 
+ATOM     11  H2  Q0H d   N     -19.870  -0.512  -0.949  0.00  0.00     0.118 H 
+ATOM     12  H3  Q0H d   N     -19.245   1.100  -1.437  0.00  0.00     0.118 H 
+ATOM     13  H4  Q0H d   N     -16.236   0.347   2.062  0.00  0.00     0.087 H 
+ATOM     14  H5  Q0H d   N     -13.976  -0.451   1.482  0.00  0.00     0.085 H 
+ENDROOT
+BRANCH   1  15
+ATOM     15  CAI Q0H d   N     -13.156  -1.466  -0.839  0.00  0.00     0.209 C 
+ATOM     16  OAA Q0H d   N     -12.845  -1.945  -1.954  0.00  0.00    -0.644 OA
+ATOM     17  OAB Q0H d   N     -12.256  -1.472   0.053  0.00  0.00    -0.644 OA
+ENDBRANCH   1  15
+TORSDOF 1

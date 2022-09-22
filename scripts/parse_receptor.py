@@ -3,20 +3,16 @@ import numpy as np
 import torch
 import json
 
-_script_path = os.path.abspath(__file__)
-_scritp_dpath = os.path.dirname(_script_path)
-
+_current_dpath = os.path.dirname(os.path.abspath(__file__))
 
 class Receptor(object):
     """The receptor class.
-
     Args:
         object ([type]): [description]
     """
 
     def __init__(self, receptor_fpath: str = None):
         """The receptor class.
-
         Args:
             receptor_fpath (str, optional): Input receptor file path. Defaults to None.
         """
@@ -28,31 +24,34 @@ class Receptor(object):
 
         self.rec_all_atoms_ad4_types = []  # Atom types defined by AutoDock4 of all atoms.
         self.rec_all_atoms_xs_types = []  # X-Score atom types of all atoms (including H atom).
-        self.rec_heavy_atoms_xs_types = [] # X-Score atom types of heavy atoms.
+        self.rec_heavy_atoms_xs_types = []  # X-Score atom types of heavy atoms.
 
         self.residues = []
         self.residues_pool = []
 
         self.residues_heavy_atoms_pairs = []  # Atom types defined by DeepRMSD
-        self.residues_heavy_atoms_indices = []
+        self.residues_heavy_atoms_indices = [] # Heavy atoms indices of each residue
         self.heavy_atoms_residues_indices = []  # The residue number where the heavy atom is located.
         self.residues_all_atoms_indices = []
 
-        self.rec_all_atoms_xyz = torch.tensor([]) # Coordinates of all atoms (including H atom) in the receptor.
-        self.rec_heavy_atoms_xyz = torch.tensor([]) # Coordinates of heavy atoms in the receptor.
+        self.receptor_original_lines = []
 
-        with open(_scritp_dpath + "/atomtype_mapping.json") as f:
+        self.init_rec_all_atoms_xyz = torch.tensor([])  # Coordinates of all atoms (including H atom) in the receptor.
+        self.init_rec_heavy_atoms_xyz = torch.tensor([])  # Coordinates of heavy atoms in the receptor.
+
+        # side chain
+        self.rec_heavy_atoms_pdb_types = []
+
+        with open(os.path.join(_current_dpath, "atomtype_mapping.json")) as f:
             self.atomtype_mapping = json.load(f)
 
-        with open(_scritp_dpath + "/covalent_radii_dict.json") as f:
+        with open(os.path.join(_current_dpath, "covalent_radii_dict.json")) as f:
             self.covalent_radii_dict = json.load(f)
 
     def _obtain_xyz(self, line: str = None) -> tuple:
         """Obtain XYZ coordinates from a pdb line.
-
         Args:
             line (str, optional): PDB line. Defaults to None.
-
         Returns:
             tuple: x, y, z
         """
@@ -64,7 +63,6 @@ class Receptor(object):
 
     def parse_receptor(self):
         """Parse the receptor pdbqt file.
-
         Returns:
             self: [description]
         """
@@ -82,12 +80,31 @@ class Receptor(object):
         rec_all_atoms_xyz = []
         temp_indices = []  # the indices of all atoms in each residue
         temp_heavy_atoms_indices = []  # the indices of heavy atoms in each residue
-        heavy_atom_num = -1
+        temp_heavy_atoms_pdb_types = []
+        heavy_atom_num = -1 # the index of heavy atoms
 
-        for num, line in enumerate(self.rec_lines):
+        num = -1 # the index of atoms including H
+        for _num_line, line in enumerate(self.rec_lines):
             atom_ad4_type = line[77:79].strip()
             atom_xs_type = self.atomtype_mapping[atom_ad4_type]
             atom_ele = atom_xs_type.split('_')[0]
+
+            pdb_type = line[12:16].strip()
+            res_name = line[17:20]
+            resid_symbol = line[17:27]
+
+            # Water or HETATM
+            if res_name[:2] == "WA" or res_name == "HEM" or res_name == "NAD" or res_name == "NAP" or res_name == "UMP" \
+                    or res_name[:2] == "MG" or res_name.strip() == "MG" or res_name == "SAM" or res_name == "ADP" \
+                    or res_name == "FAD" or res_name[:2] == "CA" or res_name.strip() == "ZN" or res_name[:2] == "ZN" \
+                    or res_name == "FMN" or res_name.strip() == "CA" or res_name == "NDP":
+
+                if _num_line == len(self.rec_lines) - 1:
+                    self.residues_heavy_atoms_indices.append(temp_heavy_atoms_indices)
+                else:
+                    continue
+
+            num += 1
 
             if atom_xs_type != "dummy":
                 heavy_atom_num += 1
@@ -100,10 +117,7 @@ class Receptor(object):
             atom_xyz = np.c_[x, y, z][0]
             rec_all_atoms_xyz.append(atom_xyz)
 
-            res_name = line[17:20]
-            resid_symbol = line[17:27]
-
-            if num == 0:
+            if len(self.residues_pool) == 0:
                 self.residues_pool.append(resid_symbol)
                 self.residues.append(res_name)
 
@@ -118,6 +132,9 @@ class Receptor(object):
                     rec_heavy_atoms_xyz.append(atom_xyz)
                     temp_heavy_atoms_indices.append(heavy_atom_num)
                     self.residues_heavy_atoms_pairs.append(res_name + '-' + atom_ele)
+                    self.rec_heavy_atoms_pdb_types.append(pdb_type)
+
+                    self.receptor_original_lines.append(line)
 
             else:
                 self.residues_all_atoms_indices.append(temp_indices)
@@ -135,6 +152,9 @@ class Receptor(object):
                     rec_heavy_atoms_xyz.append(atom_xyz)
                     temp_heavy_atoms_indices = [heavy_atom_num]
                     self.residues_heavy_atoms_pairs.append(res_name + '-' + atom_ele)
+                    self.rec_heavy_atoms_pdb_types.append(pdb_type)
+
+                    self.receptor_original_lines.append(line)
 
                 else:
                     pass
@@ -143,8 +163,9 @@ class Receptor(object):
                 self.residues_all_atoms_indices.append(temp_indices)
                 self.residues_heavy_atoms_indices.append(temp_heavy_atoms_indices)
 
-        self.rec_all_atoms_xyz = torch.from_numpy(np.array(rec_all_atoms_xyz)).to(torch.float32)
-        self.rec_heavy_atoms_xyz = torch.from_numpy(np.array(rec_heavy_atoms_xyz)).to(torch.float32)
+
+        self.init_rec_all_atoms_xyz = torch.from_numpy(np.array(rec_all_atoms_xyz)).to(torch.float32)
+        self.init_rec_heavy_atoms_xyz = torch.from_numpy(np.array(rec_heavy_atoms_xyz)).to(torch.float32)
 
         return self
 
@@ -158,7 +179,7 @@ class Receptor(object):
                     continue
                 else:
                     candi_d = torch.sqrt(torch.sum(torch.square(
-                        self.rec_all_atoms_xyz[carbon_index] - self.rec_all_atoms_xyz[candi_neighb_index])))
+                        self.init_rec_all_atoms_xyz[carbon_index] - self.init_rec_all_atoms_xyz[candi_neighb_index])))
                     if candi_d <= self.covalent_radii_dict[self.rec_all_atoms_ad4_types[carbon_index]] + \
                             self.covalent_radii_dict[
                                 self.rec_all_atoms_ad4_types[candi_neighb_index]]:
@@ -188,7 +209,7 @@ class Receptor(object):
                 else:
                     if self.rec_all_atoms_ad4_types[candi_neighb_index] == "HD":
                         candi_d = torch.sqrt(torch.sum(torch.square(
-                            self.rec_all_atoms_xyz[rec_atom_index] - self.rec_all_atoms_xyz[candi_neighb_index])))
+                            self.init_rec_all_atoms_xyz[rec_atom_index] - self.init_rec_all_atoms_xyz[candi_neighb_index])))
                         if candi_d <= self.covalent_radii_dict[self.rec_all_atoms_ad4_types[rec_atom_index]] + \
                                 self.covalent_radii_dict[
                                     self.rec_all_atoms_ad4_types[candi_neighb_index]]:
@@ -215,14 +236,11 @@ class Receptor(object):
 
         """
         Upgrade the xs atom types of some atoms in the protein:
-
         1. "C_H" is kept if the carbon atom is not bonded to the heteto atoms (H, non-carbon heavy atoms),
         otherwise return "C_P".
-
         2. If a nitrogen or oxygen atom is bonded to a polar hydrogen, it is considered a hydrogen bond donor.
         """
         if r_xs == "C_H":
-
             if previous_series in self.rec_carbon_is_hydrophobic_dict.keys():
                 r_xs = self.rec_carbon_is_hydrophobic_dict[previous_series]
 
@@ -261,14 +279,3 @@ class Receptor(object):
             pass
 
         return self.rec_heavy_atoms_xs_types
-
-
-if __name__ == '__main__':
-    import sys
-
-    receptor = Receptor(sys.argv[1])
-    receptor.parse_receptor()
-
-    # print(receptor.rec_heavy_atoms_xyz.size())
-    # print(receptor.rec_heavy_atoms_xyz[0])
-

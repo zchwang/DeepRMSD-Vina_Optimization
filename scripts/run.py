@@ -14,19 +14,21 @@ add_args(parser)
 args = parser.parse_args()
 
 receptor_fpath = args.receptor
-pose_fpath = args.pose
-native_pose_path = args.native_pose
+poses_dpath = args.poses_dpath
 model_fpath = args.model
 mean_std_file = args.mean_std_file
 output_path = args.output_path
 
+
 def main():
 
     print("Start Now ...")
+    
+    print("Receptor:", receptor_fpath)
+    print("Poses:", poses_dpath)
 
     run_optimization(rec_fpath=receptor_fpath,
-            lig_fpath = pose_fpath,
-            native_pose_fpath = native_pose_path,
+            poses_dpath=poses_dpath,
             model_fpath = model_fpath,
             mean_std_file = mean_std_file,
             output_path = output_path)
@@ -35,6 +37,3 @@ start_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 main()
 end_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-with open(output_path + '/time_running.dat', 'w') as f:
-    f.writelines('Start Time:  ' + start_time + '\n')
-    f.writelines('End Time:  ' + end_time)

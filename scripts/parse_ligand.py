@@ -1,49 +1,46 @@
+from turtle import pos
 import numpy as np
 import torch
-from torch import sin, cos
 import itertools
 import json
 import os
 
-
 _current_dpath = os.path.dirname(os.path.abspath(__file__))
 
 class Ligand():
-    def __init__(self, ligand_pdbqt_fpath: str = None):
-        self.ligand_fpath = ligand_pdbqt_fpath
+    def __init__(self, poses_dir: str=None):
+        self.poses_dpath = poses_dir
 
-        self.heavy_atoms_previous_series = []
-        self.heavy_atoms_current_index = []
-        self.lig_heavy_atoms_element = [] # Elements types of heavy atoms.
-        self.lig_heavy_atoms_xs_types = [] # X-Score atom types of heavy atoms.
-        self.lig_heavy_atoms_ad4_types = [] # Atom types defined by AutoDock4 of heavy atoms.
+        self.heavy_atoms_previous_series = []  # The indices of heavy atoms in pdbqt file
+        self.heavy_atoms_current_index = []  # The indices of heavy atoms when not including H.
+        self.lig_heavy_atoms_element = []  # Elements types of heavy atoms.
+        self.lig_heavy_atoms_xs_types = []  # X-Score atom types of heavy atoms.
+        self.lig_heavy_atoms_ad4_types = []  # Atom types defined by AutoDock4 of heavy atoms.
 
-        self.lig_all_atoms_ad4_types = []
-        self.lig_all_atoms_xs_types = []
+        self.lig_all_atoms_ad4_types = []  # The AutoDock atom types of all atoms
+        self.lig_all_atoms_xs_types = []  # The X-score atom types of all atoms
 
-        self.root_heavy_atom_index = [] # The indices of heavy atoms in the root frame (the first substructure).
-        self.frame_heavy_atoms_index_list = [] # The indices of heavy atoms in other substructures.
-        self.frame_all_atoms_index_list = []
+        self.root_heavy_atom_index = []  # The indices of heavy atoms in the root frame (the first substructure).
+        self.frame_heavy_atoms_index_list = []  # The indices of heavy atoms in other substructures (Root is not included).
+        self.frame_all_atoms_index_list = []  # The indices of all atoms in other substructures (Root is not included).
 
-        self.origin_heavy_atoms_lines = []
+        self.origin_heavy_atoms_lines = []  # In the pdbqt file, the content of the lines where heavy atoms are located.
 
-        self.series_to_index_dict = {}
-        self.torsion_bond_series = []
-        self.torsion_bond_index = [] # The indices of atoms at both ends of a rotatable bond.
+        self.series_to_index_dict = {}  # Dict: keys: self.heavy_atoms_previous_series; values: self.heavy_atoms_current_index
+        self.torsion_bond_series = []  # The atomic index of the rotation bond is the index
+        self.torsion_bond_index = []  # The indices of atoms at both ends of a rotatable bond.
         self.torsion_bond_index_matrix = torch.tensor([])  # heavy_atoms
 
-        self.init_lig_heavy_atoms_xyz = torch.tensor([])
-        self.lig_all_atoms_xyz = torch.tensor([])
-        self.lig_all_atoms_indices = []
+        self.init_lig_heavy_atoms_xyz = torch.tensor([])  # The initial xyz of heavy atoms in the ligand
+        self.lig_all_atoms_xyz = torch.tensor([])  # The initial xyz of all atoms in the ligand
+        self.lig_all_atoms_indices = []  # The indices of all atoms (including H) in the ligand.
 
-        self.root_switch = False
-        self.branch_switch = False
-        self.number_of_H = 0
-        self.number_of_branch = 0
-        self.number_of_frames = 0
-        self.number_of_heavy_atoms = 0
+        self.number_of_H = 0  # The number of Hydrogen atoms.
+        self.number_of_frames = 0  # The number of sub-frames (not including Root).
+        self.number_of_heavy_atoms = 0  # The number of heavy atoms in the ligand.
+        self.number_of_heavy_atoms_in_every_frame = []  # The number of heavy atoms in each frame (not including Root).
 
-        self.ligand_center = torch.tensor([])
+        self.ligand_center = torch.tensor([]) # shape [N, 3]
         self.inactive_torsion = 0
 
         self.lig_carbon_is_hydrophobic_dict = {}
@@ -62,9 +59,17 @@ class Ligand():
             self.vdw_radii_dict = json.load(f)
 
     def parse_ligand(self):
+
+        self._get_poses_fpath()
+
         # parse the ligand
-        self._read_pdbqt()
-        self._parse_frame()
+        first_pose_fpath = os.path.join(self.poses_dpath, self.poses_list[0])
+        self._parse_frame(first_pose_fpath)
+
+        for num, f in enumerate(self.poses_list[1:]):
+            f = os.path.join(self.poses_dpath, f)
+            self._get_xyz(num+1, f)
+
         self.update_heavy_atoms_xs_types()
         self.update_ligand_bonded_information()
         self.generate_frame_heavy_atoms_matrix()
@@ -74,9 +79,12 @@ class Ligand():
 
         return self
 
-    def _read_pdbqt(self):
-        with open(self.ligand_fpath) as f:
-            self.lines = [x[:-1] for x in f.readlines()]
+    def _get_poses_fpath(self):
+        
+        self.poses_list = [x for x in os.listdir(self.poses_dpath) if x[-5:] == "pdbqt"]
+        self.poses_file_names = [os.path.basename(x)[:-6] for x in self.poses_list]
+
+        self.number_of_poses = len(self.poses_list)
 
         return self
 
@@ -84,89 +92,114 @@ class Ligand():
         number = sum([1 if not x in ["H", "HD"] else 0 for x in ad4_types_list])
         return number
 
-    def _parse_frame(self):
+    def _get_xyz(self, num, pose_fpath):
+
+        with open(pose_fpath) as f:
+            lines = [x.strip() for x in f.readlines() if x[:4] == "ATOM" or x[:4] == "HETA"]
+
+        # xyz of each heavy atom
+        ha_xyz = []
+        all_xyz = []
+        for line in lines:
+            x = float(line[30:38].strip())
+            y = float(line[38:46].strip())
+            z = float(line[46:54].strip())
+            _xyz = np.c_[x, y, z][0]
+            all_xyz.append(_xyz)
+        
+        for k, v in zip(self.lig_all_atoms_xs_types, all_xyz):
+            if k != "dummy":
+                ha_xyz.append(v)
+        
+        ha_xyz = torch.from_numpy(np.array(ha_xyz))
+        all_xyz = torch.from_numpy(np.array(all_xyz))
+
+        ligand_center = torch.mean(ha_xyz, dim=0)
+        self.ligand_center[num] = ligand_center
+
+        self.init_lig_heavy_atoms_xyz[num] = ha_xyz
+        self.lig_all_atoms_xyz[num] = all_xyz
+
+        return self
+
+
+    def _parse_frame(self, pose_fpath):
+
+        with open(pose_fpath) as f:
+            lines = [x.strip() for x in f.readlines()]
+
         init_lig_heavy_atoms_xyz = []
         lig_all_atoms_xyz = []
 
-        for line in self.lines:
+        branch_start_numbers = []
+        for num, line in enumerate(lines):
+            if line.startswith("ROOT"):
+                root_start_number = num
+            if line.startswith("ENDROOT"):
+                root_end_number = num
+            if line.startswith("BRANCH"):
+                branch_start_numbers.append(num)
 
-            # parse root frame
-            if line[:4] == "ROOT":
-                self.root_switch = True
-                continue
+        # Root
+        root_lines = lines[root_start_number + 1:root_end_number]
+        for line in root_lines:
+            atom_num = int(line.split()[1])
 
-            if line[:7] == "ENDROOT":
-                self.root_switch = False
-                continue
+            atom_ad4_type = line[77:79].strip()
+            atom_xs_type = self.atomtype_mapping[atom_ad4_type]
 
-            if self.root_switch == True:
+            self.lig_all_atoms_ad4_types.append(atom_ad4_type)
+            self.lig_all_atoms_xs_types.append(atom_xs_type)
+
+            # xyz of each heavy atom
+            x = float(line[30:38].strip())
+            y = float(line[38:46].strip())
+            z = float(line[46:54].strip())
+
+            atom_xyz = np.c_[x, y, z][0]
+            lig_all_atoms_xyz.append(atom_xyz)
+
+            if atom_xs_type != "dummy":
+                self.heavy_atoms_previous_series.append(atom_num)
+
+                index = atom_num - (self.number_of_H + 1)
+                self.heavy_atoms_current_index.append(index)
+                self.root_heavy_atom_index.append(index)
+
+                init_lig_heavy_atoms_xyz.append(atom_xyz)
+                self.lig_heavy_atoms_element.append(atom_xs_type.split('_')[0])
+                self.lig_heavy_atoms_ad4_types.append(atom_ad4_type)
+                self.lig_heavy_atoms_xs_types.append(atom_xs_type)
+                self.origin_heavy_atoms_lines.append(line)
+            else:
+                self.number_of_H += 1
+
+        # Other frames
+        number_of_branch = len(branch_start_numbers)
+        for num, start_num in enumerate(branch_start_numbers):
+
+            branch_line = lines[start_num]
+
+            parent_id = int(branch_line.split()[1])
+            son_id = int(branch_line.split()[2])
+
+            each_torsion_bond_series = [parent_id, son_id]
+            self.torsion_bond_series.append(each_torsion_bond_series)
+
+            if num == number_of_branch - 1:
+                _the_branch_lines = [x.strip() for x in lines[start_num:] if
+                                     x.startswith("ATOM") or x.startswith("HETATM")]
+
+            else:
+                end_num = branch_start_numbers[num + 1]
+                _the_branch_lines = [x.strip() for x in lines[start_num:end_num] if
+                                     x.startswith("ATOM") or x.startswith("HETATM")]
+
+            each_frame_all_atoms_index = []
+            each_frame_heavy_atoms_index = []
+
+            for line in _the_branch_lines:
                 atom_num = int(line.split()[1])
-
-                atom_ad4_type = line[77:79].strip()
-                atom_xs_type = self.atomtype_mapping[atom_ad4_type]
-
-                self.lig_all_atoms_ad4_types.append(atom_ad4_type)
-                self.lig_all_atoms_xs_types.append(atom_xs_type)
-
-                # xyz of each heavy atom
-                x = float(line[30:38].strip())
-                y = float(line[38:46].strip())
-                z = float(line[46:54].strip())
-
-                atom_xyz = np.c_[x, y, z][0]
-                lig_all_atoms_xyz.append(atom_xyz)
-
-                if atom_xs_type != "dummy":
-                    self.heavy_atoms_previous_series.append(atom_num)
-
-                    index = atom_num - (self.number_of_H + 1)
-                    self.heavy_atoms_current_index.append(index)
-                    self.root_heavy_atom_index.append(index)
-
-                    init_lig_heavy_atoms_xyz.append(atom_xyz)
-                    self.lig_heavy_atoms_element.append(atom_xs_type.split('_')[0])
-                    self.lig_heavy_atoms_ad4_types.append(atom_ad4_type)
-                    self.lig_heavy_atoms_xs_types.append(atom_xs_type)
-                    self.origin_heavy_atoms_lines.append(line)
-                else:
-                    self.number_of_H += 1
-
-            # parse other frame
-            if line[:9] == "ENDBRANCH":
-                self.branch_switch = False
-                continue
-
-            if line[:6] == "BRANCH":
-                self.number_of_branch += 1
-
-                parent_id = int(line.split()[1])
-                son_id = int(line.split()[2])
-
-                each_torsion_bond_series = [parent_id, son_id]
-                self.torsion_bond_series.append(each_torsion_bond_series)
-
-                if self.number_of_branch != 1:
-                    self.frame_heavy_atoms_index_list.append(each_frame_heavy_atoms_index)
-                    self.frame_all_atoms_index_list.append(each_frame_all_atoms_index)
-
-                    each_frame_all_atoms_ad4_types = [self.lig_all_atoms_ad4_types[x] for x in
-                                                      each_frame_all_atoms_index]
-
-                    number_of_heavy_atoms_of_frame = self._number_of_heavy_atoms_of_frame(
-                        each_frame_all_atoms_ad4_types)
-
-                    if parent_id != each_frame_all_atoms_index[0] + 1 and number_of_heavy_atoms_of_frame == 1:
-                        self.inactive_torsion += 1
-
-                self.branch_switch = True
-                each_frame_all_atoms_index = []
-                each_frame_heavy_atoms_index = []
-
-            if self.branch_switch == True:
-                atom_num = int(line.split()[1])
-
-                if not line[:4] == "ATOM" and not line[:6] == "HETATM":
-                    continue
 
                 atom_ad4_type = line[77:79].strip()
                 atom_xs_type = self.atomtype_mapping[atom_ad4_type]
@@ -181,10 +214,12 @@ class Ligand():
 
                 atom_xyz = np.c_[x, y, z][0]
                 lig_all_atoms_xyz.append(atom_xyz)
-
                 each_frame_all_atoms_index.append(atom_num - 1)
 
+                number_of_heavy_atom = 0
                 if atom_xs_type != "dummy":
+                    number_of_heavy_atom += 1
+
                     self.heavy_atoms_previous_series.append(atom_num)
 
                     index = atom_num - (self.number_of_H + 1)
@@ -200,34 +235,33 @@ class Ligand():
                 else:
                     self.number_of_H += 1
 
-            if line[:7] == "TORSDOF":
-                try:
-                    self.frame_heavy_atoms_index_list.append(each_frame_heavy_atoms_index)
-                    self.frame_all_atoms_index_list.append(each_frame_all_atoms_index)
+            self.number_of_heavy_atoms_in_every_frame.append(number_of_heavy_atom)
 
-                    each_frame_all_atoms_ad4_types = [self.lig_all_atoms_ad4_types[x] for x in
-                                                      each_frame_all_atoms_index]
+            self.frame_all_atoms_index_list.append(each_frame_all_atoms_index)
+            self.frame_heavy_atoms_index_list.append(each_frame_heavy_atoms_index)
 
-                    number_of_heavy_atoms_of_frame = self._number_of_heavy_atoms_of_frame(
-                        each_frame_all_atoms_ad4_types)
-                    if number_of_heavy_atoms_of_frame == 1:
-                        self.inactive_torsion += 1
+        init_lig_heavy_atoms_xyz = torch.from_numpy(np.array(init_lig_heavy_atoms_xyz)).to(torch.float32)
+        lig_all_atoms_xyz = torch.from_numpy(np.array(lig_all_atoms_xyz)).to(torch.float32)
 
-                except UnboundLocalError:
-                    print('no other frame existed in this ligand ...')
+        self.init_lig_heavy_atoms_xyz = torch.zeros(self.number_of_poses, len(init_lig_heavy_atoms_xyz), 3)
+        self.lig_all_atoms_xyz = torch.zeros(self.number_of_poses, len(lig_all_atoms_xyz), 3)
+        
+        self.init_lig_heavy_atoms_xyz[0] = init_lig_heavy_atoms_xyz
+        self.lig_all_atoms_xyz[0] = lig_all_atoms_xyz
 
-        self.init_lig_heavy_atoms_xyz = torch.from_numpy(np.array(init_lig_heavy_atoms_xyz)).to(torch.float32)
-        self.lig_all_atoms_xyz = torch.from_numpy(np.array(lig_all_atoms_xyz)).to(torch.float32)
+        ligand_center = torch.mean(init_lig_heavy_atoms_xyz, dim=0)
+        self.ligand_center = torch.zeros(self.number_of_poses, 3)
+       
+        self.ligand_center[0] = ligand_center
 
-        self.ligand_center = torch.mean(self.init_lig_heavy_atoms_xyz, dim=0)
-        self.lig_all_atoms_indices = [x for x in range(len(self.lig_all_atoms_xyz))]
+        self.lig_all_atoms_indices = [x for x in range(len(lig_all_atoms_xyz))]
 
         return self
 
     def update_ligand_bonded_information(self):
 
         self.number_of_frames = len(self.frame_heavy_atoms_index_list)
-        self.number_of_heavy_atoms = len(self.init_lig_heavy_atoms_xyz)
+        self.number_of_heavy_atoms = len(self.init_lig_heavy_atoms_xyz[0])
 
         self.series_to_index_dict = dict(zip(self.heavy_atoms_previous_series, self.heavy_atoms_current_index))
         self.torsion_bond_index_matrix = torch.zeros(self.number_of_heavy_atoms, self.number_of_heavy_atoms)
@@ -238,6 +272,7 @@ class Ligand():
 
             self.torsion_bond_index.append([Y, X])
             self.torsion_bond_index_matrix[Y, X] = 1
+
             self.torsion_bond_index_matrix[X, Y] = 1
 
         return self
@@ -254,7 +289,7 @@ class Ligand():
                     continue
                 else:
                     candi_d = torch.sqrt(torch.sum(torch.square(
-                        self.lig_all_atoms_xyz[carbon_index] - self.lig_all_atoms_xyz[candi_neighb_index])))
+                        self.lig_all_atoms_xyz[0][carbon_index] - self.lig_all_atoms_xyz[0][candi_neighb_index])))
                     if candi_d <= self.covalent_radii_dict[self.lig_all_atoms_ad4_types[carbon_index]] + \
                             self.covalent_radii_dict[
                                 self.lig_all_atoms_ad4_types[candi_neighb_index]]:
@@ -284,7 +319,7 @@ class Ligand():
                 else:
                     if self.lig_all_atoms_ad4_types[candi_neighb_index] == "HD":
                         candi_d = torch.sqrt(torch.sum(torch.square(
-                            self.lig_all_atoms_xyz[lig_atom_index] - self.lig_all_atoms_xyz[candi_neighb_index])))
+                            self.lig_all_atoms_xyz[0][lig_atom_index] - self.lig_all_atoms_xyz[0][candi_neighb_index])))
                         if candi_d <= self.covalent_radii_dict[self.lig_all_atoms_ad4_types[lig_atom_index]] + \
                                 self.covalent_radii_dict[
                                     self.lig_all_atoms_ad4_types[candi_neighb_index]]:
@@ -327,7 +362,7 @@ class Ligand():
     def generate_frame_heavy_atoms_matrix(self):
         """
         Args:
-            The indices of atoms in each frame including root
+            The indices of atoms in each frame including root.
 
         Returns:
             Matrix, the value is 1 if the two atoms in same frame, else 0.
@@ -352,108 +387,27 @@ class Ligand():
         Returns:
             [int]: Number of active torsion angles
         """
+        all_rotorX_indices = [bond[0] for bond in self.torsion_bond_index]
+        for each_list in self.frame_heavy_atoms_index_list:
+            if len(each_list) == 1 and each_list[0] not in all_rotorX_indices:
+                self.inactive_torsion += 1
+
         self.active_torsion = self.number_of_frames - self.inactive_torsion
 
-        return self.active_torsion
+        return self
 
     def init_conformation_tentor(self, float_: float = 0.001):
-        float_ = torch.tensor(float_)
 
-        xyz = self.init_lig_heavy_atoms_xyz[0]
+        xyz = self.init_lig_heavy_atoms_xyz[:, 0]
         number_of_frames = self.number_of_frames
 
-        _temp_vector = torch.zeros(6 + number_of_frames)
-        self.init_cnfr = torch.zeros(6 + number_of_frames)
-
-        for i in range(0, 3):
-            self.init_cnfr[i] = xyz[i] + _temp_vector[i]
-
-        for i in range(3, 3 + number_of_frames):
-            self.init_cnfr[i] = float_ + _temp_vector[i]
-
+        _other_vector = torch.zeros(self.number_of_poses, number_of_frames + 3)
+        self.init_cnfr = torch.cat((xyz, _other_vector), axis=1)
 
         return self.init_cnfr.requires_grad_()
-
-
-def rotation_matrix(alpha: float, beta: float, gamma: float) -> torch.Tensor:
-    alpha = alpha.clone()
-    beta = beta.clone()
-    gamma = gamma.clone()
-    Rx = torch.zeros(9)
-    Ry = torch.zeros(9)
-    Rz = torch.zeros(9)
-
-    Rx_list = [(alpha + 1) / (alpha + 1), alpha - alpha, alpha - alpha,
-               alpha - alpha, torch.cos(alpha), - torch.sin(alpha),
-               alpha - alpha, torch.sin(alpha), torch.cos(alpha)]
-
-    Ry_list = [torch.cos(beta), beta - beta, - torch.sin(beta),
-               beta - beta, (beta + 1) / (beta + 1), beta - beta,
-               torch.sin(beta), beta - beta, torch.cos(beta)]
-
-    Rz_list = [torch.cos(gamma), -torch.sin(gamma), gamma - gamma,
-               torch.sin(gamma), torch.cos(gamma), gamma - gamma,
-               gamma - gamma, gamma - gamma, (gamma + 1) / (gamma + 1)]
-
-    for i in range(9):
-        Rx[i] = Rx_list[i]
-        Ry[i] = Ry_list[i]
-        Rz[i] = Rz_list[i]
-
-    Rx = Rx.reshape(3, 3)
-    Ry = Ry.reshape(3, 3)
-    Rz = Rz.reshape(3, 3)
-
-    R = torch.mm(torch.mm(Rx, Ry), Rz)
-
-    return R
-
-
-def rodrigues(vector, theta):
-    theta = theta.clone()
-
-    a = vector[0]
-    b = vector[1]
-    c = vector[2]
-
-    R = torch.zeros(9)
-
-    R_list = [
-        cos(theta) + torch.pow(a, 2) * (1 - cos(theta)), a * b * (1 - cos(theta)) - c * sin(theta),
-        a * c * (1 - cos(theta)) + b * sin(theta),
-        a * b * (1 - cos(theta)) + c * sin(theta), cos(theta) + torch.pow(b, 2) * (1 - cos(theta)),
-        b * c * (1 - cos(theta)) - a * sin(theta),
-        a * c * (1 - cos(theta)) - b * sin(theta), b * c * (1 - cos(theta)) + a * sin(theta),
-        cos(theta) + torch.pow(c, 2) * (1 - cos(theta))
-    ]
-
-    for i in range(9):
-        R[i] = R_list[i]
-
-    # 保证torch.mm(xyz, R), 即坐标在前，旋转矩阵在后
-    R = R.reshape(3, 3).T
-
-    return R
-
-
-def vector_length(vector):
-    return torch.sqrt(torch.sum(torch.square(vector)))
-
-
-def relative_vector_rotation(vector, R):
-    vec_length = vector_length(vector)
-
-    new_vector = torch.mm(vector.reshape(1, -1), R)[0]
-    new_vec_length = vector_length(new_vector)
-
-    new_vector = new_vector * vec_length / new_vec_length
-
-    return new_vector
-
 
 if __name__ == '__main__':
     import os, sys
 
     ligand = Ligand(sys.argv[1])
     ligand.parse_ligand()
-

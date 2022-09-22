@@ -1,0 +1,240 @@
+MODEL        1
+ATOM      1  CAJ LIG A   1     -14.476  -0.995  -0.548  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.557  -1.037  -1.453  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.580  -1.095  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.944  -0.531  -1.852  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.974   0.122  -1.011  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.381   0.300   0.334  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.043  -0.070   0.162  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.043  -0.036   1.066  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.763  -0.489   0.737  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.156  -1.466  -0.839  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.845  -1.945  -1.954  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.256  -1.472   0.053  1.00  0.00           O
+TER
+ENDMDL
+MODEL        2
+ATOM      1  CAJ LIG A   1     -14.482  -1.004  -0.547  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.561  -1.026  -1.455  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.558  -1.097  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.941  -0.490  -1.857  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.966   0.168  -1.014  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.375   0.329   0.334  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.041  -0.055   0.163  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.043  -0.040   1.070  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.767  -0.505   0.742  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.167  -1.488  -0.837  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.843  -1.911  -1.971  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.286  -1.564   0.071  1.00  0.00           O
+TER
+ENDMDL
+MODEL        3
+ATOM      1  CAJ LIG A   1     -14.487  -1.010  -0.548  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.564  -1.016  -1.458  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.540  -1.099  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.939  -0.455  -1.861  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.960   0.204  -1.014  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.370   0.349   0.337  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.039  -0.045   0.165  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.043  -0.046   1.074  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.771  -0.519   0.744  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.175  -1.503  -0.840  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.841  -1.882  -1.986  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.310  -1.632   0.076  1.00  0.00           O
+TER
+ENDMDL
+MODEL        4
+ATOM      1  CAJ LIG A   1     -14.492  -1.024  -0.551  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.569  -1.007  -1.462  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.799  -0.518  -1.099  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.935  -0.412  -1.859  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.948   0.254  -1.007  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.357   0.378   0.345  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.031  -0.032   0.170  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.035  -0.054   1.079  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.769  -0.541   0.745  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.187  -1.531  -0.848  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.833  -1.834  -2.011  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.350  -1.754   0.077  1.00  0.00           O
+TER
+ENDMDL
+MODEL        5
+ATOM      1  CAJ LIG A   1     -14.490  -1.021  -0.560  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.571  -0.996  -1.466  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.799  -0.508  -1.094  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.939  -0.394  -1.849  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.946   0.266  -0.987  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.349   0.380   0.363  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.025  -0.031   0.179  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.025  -0.061   1.084  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.761  -0.547   0.741  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.187  -1.528  -0.866  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.841  -1.828  -2.032  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.344  -1.753   0.053  1.00  0.00           O
+TER
+ENDMDL
+MODEL        6
+ATOM      1  CAJ LIG A   1     -14.489  -1.019  -0.569  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.574  -0.985  -1.470  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.799  -0.497  -1.089  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.941  -0.376  -1.838  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.944   0.281  -0.968  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.341   0.383   0.381  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.018  -0.029   0.188  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.015  -0.067   1.089  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.753  -0.554   0.736  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.188  -1.526  -0.884  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.848  -1.822  -2.053  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.341  -1.756   0.030  1.00  0.00           O
+TER
+ENDMDL
+MODEL        7
+ATOM      1  CAJ LIG A   1     -14.488  -1.016  -0.578  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.577  -0.974  -1.474  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.799  -0.487  -1.082  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.946  -0.358  -1.825  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.942   0.294  -0.944  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.332   0.386   0.401  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.011  -0.027   0.199  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -16.003  -0.073   1.094  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.744  -0.560   0.731  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.190  -1.524  -0.904  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.857  -1.814  -2.077  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.337  -1.760   0.003  1.00  0.00           O
+TER
+ENDMDL
+MODEL        8
+ATOM      1  CAJ LIG A   1     -14.487  -1.013  -0.588  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.581  -0.963  -1.477  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.800  -0.475  -1.075  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.950  -0.340  -1.810  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.940   0.310  -0.920  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.322   0.392   0.423  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -17.003  -0.022   0.210  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.990  -0.077   1.099  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.734  -0.564   0.726  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.192  -1.521  -0.925  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.867  -1.806  -2.101  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.333  -1.763  -0.024  1.00  0.00           O
+TER
+ENDMDL
+MODEL        9
+ATOM      1  CAJ LIG A   1     -14.486  -1.009  -0.598  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.585  -0.952  -1.479  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.800  -0.463  -1.068  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.955  -0.321  -1.795  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.938   0.325  -0.894  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.311   0.398   0.445  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.994  -0.018   0.222  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.976  -0.081   1.104  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.724  -0.568   0.720  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.194  -1.519  -0.945  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.877  -1.798  -2.125  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.331  -1.768  -0.052  1.00  0.00           O
+TER
+ENDMDL
+MODEL       10
+ATOM      1  CAJ LIG A   1     -14.485  -1.007  -0.608  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.590  -0.941  -1.482  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.452  -1.060  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.960  -0.302  -1.778  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.935   0.342  -0.868  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.300   0.405   0.468  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.985  -0.014   0.234  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.962  -0.084   1.108  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.714  -0.572   0.714  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.196  -1.517  -0.967  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.888  -1.788  -2.151  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.329  -1.775  -0.080  1.00  0.00           O
+TER
+ENDMDL
+MODEL       11
+ATOM      1  CAJ LIG A   1     -14.484  -1.004  -0.619  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.595  -0.929  -1.485  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.439  -1.051  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.965  -0.281  -1.760  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.932   0.360  -0.839  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.286   0.413   0.493  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.975  -0.008   0.247  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.946  -0.087   1.114  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.702  -0.577   0.708  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.200  -1.516  -0.990  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.901  -1.782  -2.177  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.326  -1.781  -0.111  1.00  0.00           O
+TER
+ENDMDL
+MODEL       12
+ATOM      1  CAJ LIG A   1     -14.483  -1.002  -0.629  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.599  -0.918  -1.487  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.425  -1.042  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.968  -0.259  -1.743  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.927   0.380  -0.811  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.272   0.423   0.516  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.965  -0.002   0.259  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.930  -0.090   1.119  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.691  -0.583   0.702  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.204  -1.518  -1.012  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.912  -1.773  -2.203  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.327  -1.796  -0.140  1.00  0.00           O
+TER
+ENDMDL
+MODEL       13
+ATOM      1  CAJ LIG A   1     -14.483  -1.003  -0.639  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.605  -0.908  -1.489  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.412  -1.033  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.972  -0.235  -1.725  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.921   0.404  -0.783  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.257   0.435   0.540  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.953   0.005   0.272  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.913  -0.094   1.124  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.679  -0.590   0.695  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.209  -1.523  -1.034  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.923  -1.763  -2.230  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.332  -1.821  -0.169  1.00  0.00           O
+TER
+ENDMDL
+MODEL       14
+ATOM      1  CAJ LIG A   1     -14.483  -1.003  -0.650  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.611  -0.898  -1.491  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.398  -1.024  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.976  -0.211  -1.706  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.915   0.427  -0.754  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.241   0.448   0.565  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.942   0.012   0.284  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.896  -0.096   1.128  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.668  -0.597   0.688  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.215  -1.528  -1.057  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.935  -1.752  -2.257  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.337  -1.845  -0.200  1.00  0.00           O
+TER
+ENDMDL
+MODEL       15
+ATOM      1  CAJ LIG A   1     -14.483  -1.003  -0.661  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.616  -0.888  -1.494  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.386  -1.015  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.980  -0.191  -1.688  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.909   0.446  -0.726  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.226   0.457   0.588  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.931   0.018   0.296  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.879  -0.099   1.132  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.656  -0.603   0.680  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.220  -1.531  -1.080  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.946  -1.740  -2.284  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.342  -1.867  -0.230  1.00  0.00           O
+TER
+ENDMDL
+MODEL       16
+ATOM      1  CAJ LIG A   1     -14.483  -1.002  -0.673  1.00  0.00           C
+ATOM      2  CAE LIG A   1     -15.621  -0.879  -1.496  1.00  0.00           C
+ATOM      3  CAL LIG A   1     -16.801  -0.376  -1.007  1.00  0.00           C
+ATOM      4  OAH LIG A   1     -17.984  -0.173  -1.670  1.00  0.00           O
+ATOM      5  CAF LIG A   1     -18.904   0.462  -0.698  1.00  0.00           C
+ATOM      6  OAG LIG A   1     -18.212   0.464   0.611  1.00  0.00           O
+ATOM      7  CAK LIG A   1     -16.920   0.022   0.307  1.00  0.00           C
+ATOM      8  CAD LIG A   1     -15.863  -0.103   1.135  1.00  0.00           C
+ATOM      9  CAC LIG A   1     -14.645  -0.608   0.672  1.00  0.00           C
+ATOM     10  CAI LIG A   1     -13.224  -1.532  -1.103  1.00  0.00           C
+ATOM     11  OAA LIG A   1     -12.956  -1.729  -2.311  1.00  0.00           O
+ATOM     12  OAB LIG A   1     -12.344  -1.883  -0.261  1.00  0.00           O
+TER
+ENDMDL

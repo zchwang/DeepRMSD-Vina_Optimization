@@ -1,6 +1,9 @@
 #!/bin/bash
 
-inputs_file=inputs.dat
+# Usage:
+# bash run_pose_optimization.sh inputs.dat 
+
+inputs_file=$1
 
 cat $inputs_file | while read line
 do
@@ -8,16 +11,13 @@ do
 	STR=($line)
 
 	# the path of input files
-	receptor_fpath=${STR[0]}
-	pose_fpath=${STR[1]}
-	native_pose_fpath=${STR[2]}
+	code=${STR[0]}
+	receptor_fpath=${STR[1]}
+	poses_dpath=${STR[2]}
 
-	INP=(${pose_fpath//// })
-	target=${INP[1]}
-	pose_name=${INP[3]}
 	
 	# the output path
-	output_dpath=test_output/${target:0:4}/${pose_name:0:(-6)}
+	output_dpath=test_output/${code}
 
 	model_fpath=models/bestmodel_cpu.pth	
 	mean_std_file=models/r6-r1_0.3-2.0nm_train_mean_std.csv
@@ -26,7 +26,12 @@ do
 		rm -r $output_dpath
 	fi
 	
-	python scripts/run.py -receptor	$receptor_fpath -pose $pose_fpath -native_pose $native_pose_fpath -model $model_fpath -mean_std_file $mean_std_file -output_path $output_dpath
+	python scripts/run.py \
+	       -receptor $receptor_fpath \
+	       -poses_dpath $poses_dpath \
+	       -model $model_fpath \
+	       -mean_std_file $mean_std_file \
+	       -output_path $output_dpath
 
 done
 
