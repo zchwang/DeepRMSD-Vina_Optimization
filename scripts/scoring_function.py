@@ -23,13 +23,40 @@ Hal = ['F', 'Cl', 'Br', 'I']
 def get_residue(r_atom):
     r, a = r_atom.split('-')
     if not r in all_residues:
-        r = 'OTH'
+
+        if r == "HID" or r == "HIE" or r == "HIP" or r == "HIZ" or r == "HIY":
+            r = "HIS"
+        elif r == "CYX" or r == "CYM" or r == "CYT":
+            r = "CYS"
+        elif r == "MEU":
+            r = "MET"
+        elif r == "LEV":
+            r = "LEU"
+        elif r == "ASQ" or r == "ASH" or r == "DID" or r == "DIC":
+            r = "ASP"
+        elif r == "GLZ":
+            r = "GLY"
+        elif r == "GLV" or r == "GLH" or r == "GLM":
+            r = "GLU"
+        elif r == "ASZ" or "ASM":
+            r = "ASN"
+        elif r == "GLO":
+            r = "GLN"
+        elif r == "SEM":
+            r = "SER"
+        elif r == "TYM":
+            r = "TYR"
+        elif r == "ALB":
+            r = "ALA"
+        else:
+            print("OTH:", r)
+            r = 'OTH'
+
     if a in rec_elements:
         a = a
     else:
         a = 'DU'
     return r + '-' + a
-
 
 def get_elementtype(e):
     if e in lig_elements:
