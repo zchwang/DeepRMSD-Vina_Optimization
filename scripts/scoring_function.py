@@ -38,7 +38,7 @@ def get_residue(r_atom):
             r = "GLY"
         elif r == "GLV" or r == "GLH" or r == "GLM":
             r = "GLU"
-        elif r == "ASZ" or "ASM":
+        elif r == "ASZ" or r == "ASM":
             r = "ASN"
         elif r == "GLO":
             r = "GLN"
