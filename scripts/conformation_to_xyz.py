@@ -107,7 +107,7 @@ class LigandConformation(Ligand):
         if rotorX_index in self.root_heavy_atom_index:
             current_torsion_R = torsion_R
         else:
-            current_torsion_R = torch.matmul(self.all_torsion_matrix[rotorX_index], torsion_R)
+            current_torsion_R = torch.matmul(torsion_R, self.all_torsion_matrix[rotorX_index])
         self.all_torsion_matrix[rotorY_index] = current_torsion_R  # shape [-1, 3, 3]
 
         # update other atoms in this frame
