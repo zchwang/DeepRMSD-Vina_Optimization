@@ -1,7 +1,6 @@
 import os
 from argparse import RawDescriptionHelpFormatter
 import argparse
-from utils import *
 
 
 def add_args(parser):

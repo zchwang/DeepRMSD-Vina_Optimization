@@ -1,0 +1,980 @@
+MODEL 1
+REMARK VINA RESULT:      -6.8      0.000      0.000
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -3.743   3.338  15.500  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.911   4.071  15.289  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.828   5.364  14.707  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -3.466   5.723  14.433  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -5.316   1.947  16.233  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.000   2.114  16.105  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -6.268   3.220  15.732  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -2.265   5.035  14.647  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -2.394   3.735  15.241  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -5.682   5.997  14.498  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -1.302   5.456  14.382  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -1.542   3.107  15.474  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -3.335   6.972  13.812  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -2.122   7.818  13.966  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -2.065   8.525  13.125  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -1.230   7.175  13.965  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -2.177   8.606  15.284  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -1.896   7.945  16.117  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -3.198   8.983  15.443  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -1.477   9.452  15.235  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -6.043   0.470  16.937  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -5.420   0.352  18.221  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -7.447   0.768  16.954  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -5.665  -0.720  15.978  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -5.539  -0.553  15.000  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -5.551  -1.642  16.347  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -6.7      1.147      1.777
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -5.621   3.811  15.247  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.264   3.485  15.233  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -3.338   4.384  14.642  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.002   5.541  14.113  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -5.592   1.851  16.299  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -6.388   2.811  15.831  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -3.961   2.047  16.009  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -5.356   5.900  14.082  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -6.258   4.960  14.686  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -2.268   4.219  14.597  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -5.700   6.824  13.632  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -7.332   5.110  14.713  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -3.124   6.483  13.562  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -1.972   7.042  14.318  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -1.275   7.521  13.615  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -1.457   6.227  14.847  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -2.452   8.083  15.341  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -2.650   9.036  14.829  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -1.675   8.231  16.106  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -3.376   7.727  15.821  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -6.210   0.405  17.155  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -5.468   0.380  18.379  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -7.614   0.672  17.286  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -5.889  -0.833  16.237  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -6.152  -1.753  16.527  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -5.421  -0.699  15.363  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -6.3      2.047      2.372
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.896   3.021  14.280  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -5.723   3.979  14.866  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -5.772   5.287  14.316  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.894   5.410  13.188  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -5.843   1.881  15.939  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.942   1.810  14.960  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -6.591   3.358  16.140  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -4.031   4.489  12.581  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -4.008   3.181  13.172  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -6.393   6.089  14.698  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -3.422   4.746  11.722  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -3.372   2.382  12.807  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -4.944   6.671  12.579  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -5.604   6.899  11.266  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -5.728   5.936  10.751  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -4.974   7.563  10.656  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.982   7.549  11.461  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -7.544   7.508  10.516  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -6.853   8.598  11.765  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -7.537   7.007  12.241  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -6.216   0.502  17.019  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -5.400   0.731  18.173  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -7.632   0.619  17.228  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -5.801  -0.803  16.242  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -5.185  -0.743  15.456  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -6.154  -1.692  16.534  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -6.3      1.558      2.074
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -5.563   3.792  15.247  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.214   3.437  15.229  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -3.270   4.314  14.633  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -3.911   5.484  14.105  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -5.573   1.834  16.303  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -6.350   2.810  15.836  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -3.940   1.993  16.006  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -5.256   5.872  14.077  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -6.177   4.954  14.686  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -2.204   4.125  14.584  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -5.581   6.803  13.627  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -7.247   5.127  14.717  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -3.014   6.406  13.549  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -2.204   6.104  12.339  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -2.478   6.803  11.536  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -2.410   5.074  12.013  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -0.705   6.247  12.643  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -0.356   7.236  12.310  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -0.146   5.463  12.111  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -0.539   6.146  13.725  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -6.220   0.403  17.163  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -5.490   0.376  18.395  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -7.621   0.691  17.279  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -5.908  -0.846  16.257  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -5.174  -1.477  16.510  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -6.444  -1.009  15.428  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -5.7      3.549      3.875
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.472   3.786  13.114  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.477   2.767  12.161  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.387   3.100  10.784  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.317   4.521  10.597  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.603   1.958  14.374  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.600   3.290  14.405  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -4.534   1.261  12.861  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -4.331   5.579  11.515  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -4.429   5.198  12.895  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -4.373   2.375   9.978  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -4.273   6.616  11.204  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -4.467   5.920  13.703  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -4.176   4.899   9.255  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -2.983   5.628   8.749  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -2.688   6.392   9.483  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -3.234   6.114   7.795  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -1.811   4.659   8.530  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -2.198   3.686   8.194  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -1.262   4.529   9.474  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -1.135   5.068   7.765  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.715   0.951  15.851  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.454   1.143  16.501  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -5.855   1.492  16.535  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -4.918  -0.534  15.368  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -5.771  -1.014  15.573  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -4.194  -0.996  14.856  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -5.6      2.668      2.891
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -3.999   3.698  13.142  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -5.036   4.390  13.767  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -5.380   5.690  13.311  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.536   6.100  12.226  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.682   2.243  14.681  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -3.773   2.459  13.730  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -5.757   3.487  14.961  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -3.472   5.454  11.583  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -3.155   4.144  12.079  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -6.176   6.295  13.729  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -2.925   5.911  10.767  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -2.344   3.545  11.680  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -4.868   7.359  11.708  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -6.215   7.670  11.163  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -6.965   7.549  11.959  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -6.441   6.976  10.340  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.266   9.112  10.637  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -5.647   9.194   9.730  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -5.880   9.797  11.407  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -7.305   9.379  10.396  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.742   0.736  15.644  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.583   0.810  16.481  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -6.004   0.825  16.322  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -4.663  -0.457  14.619  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -3.964  -1.164  14.727  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -5.312  -0.507  13.860  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -5.6      2.522      2.821
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.125   4.386  14.311  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.411   3.912  13.030  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.351   4.804  11.928  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -3.999   6.129  12.351  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.544   2.233  14.683  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.262   3.393  15.274  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -4.731   2.281  13.027  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -3.728   6.656  13.620  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -3.804   5.721  14.707  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -4.546   4.522  10.900  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -3.477   7.699  13.773  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -3.633   6.003  15.739  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -3.879   7.038  11.291  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -4.989   7.309  10.340  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -5.275   6.371   9.841  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -4.651   8.036   9.587  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.208   7.878  11.081  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -6.119   7.660  12.155  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -7.126   7.415  10.687  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -6.254   8.966  10.931  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.759   0.705  15.592  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.625   0.656  16.465  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -6.030   0.878  16.236  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -4.746  -0.456  14.530  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -4.381  -0.292  13.613  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -5.101  -1.359  14.772  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -5.5      2.460      3.180
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -5.603   3.862  14.938  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.782   2.933  14.297  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.063   3.323  13.137  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.333   4.689  12.793  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -5.840   2.056  16.215  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -6.256   3.308  16.032  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -4.754   1.474  15.092  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -5.163   5.649  13.388  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -5.875   5.211  14.555  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -3.395   2.673  12.583  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -5.260   6.654  12.994  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -6.562   5.850  15.099  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -3.607   5.137  11.681  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -4.038   4.870  10.284  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -4.720   4.006  10.274  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -3.154   4.645   9.669  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -4.763   6.092   9.699  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -5.724   5.776   9.267  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -4.140   6.547   8.915  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -4.944   6.827  10.496  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -6.428   1.022  17.553  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -7.780   0.718  17.192  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -5.519  -0.088  17.539  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -6.341   1.889  18.864  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -5.673   1.658  19.573  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -6.952   2.671  18.988  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -5.4      3.743      6.426
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -5.324   4.114  13.998  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.470   3.016  13.890  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.348   2.118  14.982  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -5.167   2.528  16.086  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.523   4.336  11.934  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -5.299   4.905  12.856  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -3.754   2.929  12.392  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -6.019   3.628  16.250  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -6.108   4.514  15.123  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -3.718   1.235  14.982  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -6.573   3.800  17.165  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -6.718   5.410  15.127  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -5.120   1.645  17.173  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -6.277   1.432  18.082  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -6.625   2.405  18.458  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -5.961   0.804  18.927  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -7.427   0.737  17.338  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -8.363   0.876  17.899  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -7.209  -0.337  17.247  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -7.533   1.175  16.335  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.268   5.041  10.309  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.845   3.931   9.509  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -5.552   5.590   9.979  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -3.140   6.130  10.462  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -2.805   6.378  11.371  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -2.759   6.573   9.650  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 10
+REMARK VINA RESULT:      -5.4      3.139      6.560
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.736   4.944  14.797  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -3.721   4.029  15.080  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.061   2.743  15.575  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -5.481   2.600  15.720  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -2.905   6.079  14.242  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.230   6.160  14.355  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -2.218   4.634  14.711  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -6.532   3.492  15.473  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -6.144   4.783  14.979  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -3.341   1.967  15.811  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -7.569   3.226  15.642  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -6.859   5.569  14.764  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -5.870   1.328  16.160  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -6.886   1.126  17.226  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -7.105   0.052  17.318  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -7.806   1.665  16.956  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.368   1.653  18.572  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -6.357   0.835  19.307  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -7.028   2.458  18.929  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -5.349   2.045  18.445  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -1.893   7.438  13.664  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -2.762   8.177  12.798  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -1.511   8.106  14.875  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -0.680   6.799  12.890  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -0.574   6.958  11.908  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -0.017   6.234  13.380  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 11
+REMARK VINA RESULT:      -5.2      2.150      2.697
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.257   5.016  13.525  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -3.088   5.226  14.258  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -2.362   6.433  14.080  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -2.988   7.277  13.103  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.129   3.167  14.755  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.823   3.776  13.795  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -2.778   3.975  15.306  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -4.141   7.101  12.328  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -4.842   5.865  12.536  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -1.453   6.685  14.614  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -4.482   7.847  11.620  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -5.739   5.598  11.988  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -2.334   8.504  12.928  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -1.418   9.075  13.950  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -0.451   9.307  13.480  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -1.267   8.339  14.753  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -2.010  10.361  14.547  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -1.260  11.164  14.504  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -2.295  10.181  15.594  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -2.898  10.658  13.971  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.571   1.558  15.404  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.566   1.289  16.388  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -5.899   1.759  15.911  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -4.507   0.552  14.194  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -4.733  -0.412  14.333  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -4.240   0.877  13.287  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 12
+REMARK VINA RESULT:      -5.1      4.155      6.516
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -3.052   4.206  13.059  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.017   3.243  12.762  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.622   2.514  13.819  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.091   2.909  15.092  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -3.190   4.338  10.842  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -2.541   4.799  11.910  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -4.339   3.165  11.133  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -3.111   3.849  15.437  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -2.522   4.559  14.338  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -5.386   1.758  13.683  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -2.816   4.027  16.465  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -1.741   5.300  14.467  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -4.693   2.252  16.174  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -6.143   1.929  16.207  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -6.302   1.041  16.836  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -6.491   1.721  15.185  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.946   3.106  16.784  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -7.415   3.667  15.962  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -6.271   3.770  17.344  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -7.725   2.723  17.458  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -2.840   4.894   9.177  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.971   4.455   8.417  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -2.704   6.315   9.323  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -1.509   4.178   8.734  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -0.990   3.634   9.393  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -1.182   4.269   7.793  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 13
+REMARK VINA RESULT:      -5.0      3.596      6.325
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -3.690   3.120  13.481  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -3.779   4.309  14.207  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.774   4.440  15.210  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -5.579   3.256  15.302  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -2.028   4.325  12.624  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -2.688   3.172  12.521  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -2.595   5.393  13.773  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -5.544   2.054  14.584  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -4.526   1.966  13.575  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -4.908   5.321  15.828  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -6.238   1.244  14.777  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -4.402   1.096  12.939  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -6.546   3.318  16.314  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -7.122   2.101  16.945  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -7.070   1.265  16.232  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -8.172   2.293  17.208  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.342   1.731  18.215  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -7.049   1.464  19.015  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -5.733   2.589  18.535  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -5.686   0.873  18.006  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -0.638   4.747  11.578  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -1.236   5.087  10.322  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -0.012   5.832  12.280  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d           0.262   3.459  11.483  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d           0.294   2.814  12.246  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d           0.800   3.285  10.658  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 14
+REMARK VINA RESULT:      -4.9      3.446      6.449
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.588   3.295  13.129  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.471   4.066  14.285  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.419   3.423  15.550  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.516   1.998  15.411  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.504   5.364  12.314  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.659   4.082  11.986  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -4.351   5.688  13.943  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -4.657   1.184  14.281  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -4.712   1.875  13.024  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -4.318   3.940  16.497  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -4.722   0.104  14.349  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -4.836   1.364  12.076  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -4.419   1.313  16.630  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -5.587   0.652  17.271  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -5.235  -0.200  17.871  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -6.272   0.293  16.490  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.332   1.638  18.183  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -6.521   2.573  17.635  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -5.719   1.851  19.071  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -7.289   1.197  18.496  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.499   6.684  11.105  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.833   7.764  11.770  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -3.795   6.112   9.992  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -6.006   7.014  10.793  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -6.235   7.722  10.125  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -6.735   6.514  11.262  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 15
+REMARK VINA RESULT:      -4.7      2.779      3.846
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -3.270   6.194  14.663  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -2.434   6.023  13.559  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -1.425   6.986  13.293  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -1.451   8.045  14.260  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.002   4.277  13.805  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.218   5.183  14.757  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -2.757   4.610  12.746  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -2.281   8.272  15.365  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -3.290   7.278  15.594  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -0.725   6.928  12.467  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -2.169   9.141  16.004  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -4.007   7.343  16.405  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -0.440   8.997  14.069  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -0.529  10.379  14.611  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -1.522  10.528  15.060  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -0.385  11.099  13.792  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d           0.549  10.609  15.682  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d           0.073  10.676  16.672  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d           1.084  11.545  15.467  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d           1.259   9.770  15.673  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.998   2.800  13.623  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -6.228   3.126  14.280  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -5.081   2.629  12.200  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -4.221   1.641  14.351  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -3.366   1.836  14.831  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -4.584   0.709  14.335  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 16
+REMARK VINA RESULT:      -4.7      3.603      6.485
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -4.301   4.902  13.970  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.140   3.548  13.672  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -4.984   2.592  14.295  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -5.907   3.223  15.195  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -2.645   4.936  12.485  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -3.376   5.694  13.301  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -2.958   3.299  12.531  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -6.091   4.567  15.543  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -5.213   5.499  14.894  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -4.938   1.524  14.116  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -6.844   4.883  16.256  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -5.240   6.565  15.088  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -6.797   2.324  15.799  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -7.022   2.288  17.268  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -8.063   1.995  17.468  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -6.836   3.287  17.688  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -6.076   1.276  17.934  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -6.658   0.600  18.579  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -5.333   1.814  18.542  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -5.561   0.690  17.159  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -1.367   5.603  11.423  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -1.406   4.766  10.262  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -1.778   6.963  11.223  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -0.011   5.466  12.212  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d           0.459   6.285  12.543  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d           0.380   4.562  12.381  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 17
+REMARK VINA RESULT:      -4.7      3.557      6.661
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -5.338   4.796  14.096  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -3.997   4.429  14.214  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -3.635   3.392  15.114  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.783   2.877  15.802  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -4.345   6.147  12.635  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -5.512   5.844  13.201  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -3.023   5.287  13.176  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -6.138   3.226  15.735  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -6.459   4.282  14.817  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -2.622   3.035  15.262  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -6.894   2.732  16.336  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -7.467   4.658  14.683  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -4.484   1.816  16.667  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -5.012   0.441  16.460  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -6.111   0.477  16.430  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -4.689  -0.200  17.293  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -4.491  -0.144  15.139  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -5.338  -0.345  14.466  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -3.953  -1.082  15.341  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -3.808   0.574  14.663  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -4.169   7.427  11.395  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -5.497   7.936  11.227  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -3.227   8.335  11.986  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -3.630   6.722  10.094  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -3.144   5.851  10.162  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -3.775   7.146   9.200  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 18
+REMARK VINA RESULT:      -4.4      5.356      6.690
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -5.598   6.558  11.808  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.975   6.204  10.610  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -5.553   6.610   9.379  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -6.764   7.349   9.592  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -3.806   5.444  12.514  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -4.921   6.055  12.912  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -3.559   5.374  10.866  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -7.438   7.707  10.767  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -6.822   7.272  11.988  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -5.134   6.391   8.403  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -8.362   8.274  10.755  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -7.250   7.469  12.965  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -7.348   7.815   8.406  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -8.815   8.000   8.255  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -9.294   7.913   9.241  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -9.211   7.222   7.585  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -9.127   9.383   7.662  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -9.096   9.326   6.564  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -8.379  10.109   8.014  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d         -10.128   9.703   7.985  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -2.646   4.697  13.654  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -3.028   5.217  14.932  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -2.858   3.289  13.469  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -1.212   5.178  13.217  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -0.693   5.800  13.804  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -0.820   4.862  12.353  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 19
+REMARK VINA RESULT:      -4.4      4.591      7.208
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -2.932   5.971  14.415  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -2.078   5.609  13.372  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -2.204   4.324  12.782  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -3.246   3.564  13.411  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -1.693   7.801  14.158  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -2.652   7.243  14.896  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -1.050   6.845  12.952  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -4.110   3.873  14.470  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -3.944   5.180  15.040  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -1.593   3.963  11.963  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -4.852   3.172  14.834  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -4.538   5.536  15.875  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -3.443   2.304  12.830  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -4.780   1.659  12.753  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -5.517   2.289  13.271  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -4.735   0.673  13.239  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -5.210   1.481  11.288  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -4.317   1.418  10.649  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -5.823   2.341  10.979  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -5.798   0.557  11.188  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -1.082   9.458  14.448  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -2.136  10.306  13.977  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -0.851   9.484  15.864  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d           0.232   9.609  13.594  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d           0.189   9.553  12.596  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d           1.109   9.761  14.049  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL
+MODEL 20
+REMARK VINA RESULT:      -4.3      3.650      6.741
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_9  and  N1_1 
+REMARK    2  A    between atoms: C5_5  and  O3_15 
+REMARK    3  A    between atoms: O3_15  and  C8_6 
+REMARK    4  A    between atoms: C8_6  and  C9_16 
+REMARK    5  A    between atoms: C1_10  and  S1_9 
+ROOT
+ATOM      1  C2  EZL d          -3.307   5.164  14.053  0.00  0.00     0.076 A 
+ATOM      2  C3  EZL d          -4.660   5.049  13.733  0.00  0.00     0.039 A 
+ATOM      3  C4  EZL d          -5.443   4.050  14.368  0.00  0.00    -0.032 A 
+ATOM      4  C5  EZL d          -4.654   3.271  15.278  0.00  0.00     0.070 A 
+ATOM      5  C1  EZL d          -3.586   6.800  12.572  0.00  0.00     0.214 A 
+ATOM      6  N2  EZL d          -2.684   6.166  13.319  0.00  0.00    -0.227 NA
+ATOM      7  S2  EZL d          -5.143   6.208  12.644  0.00  0.00    -0.054 SA
+ATOM      8  C6  EZL d          -3.295   3.334  15.615  0.00  0.00    -0.049 A 
+ATOM      9  C7  EZL d          -2.539   4.354  14.945  0.00  0.00    -0.051 A 
+ATOM     10  H3  EZL d          -6.501   3.895  14.189  0.00  0.00     0.090 H 
+ATOM     11  H6  EZL d          -2.845   2.657  16.332  0.00  0.00     0.087 H 
+ATOM     12  H7  EZL d          -1.476   4.498  15.104  0.00  0.00     0.087 H 
+ENDROOT
+BRANCH   4  13
+ATOM     13  O3  EZL d          -5.394   2.302  15.968  0.00  0.00    -0.351 OA
+BRANCH  13  14
+ATOM     14  C8  EZL d          -6.711   2.596  16.592  0.00  0.00     0.023 C 
+ATOM     15  H4  EZL d          -7.353   3.108  15.860  0.00  0.00     0.074 H 
+ATOM     16  H5  EZL d          -6.560   3.247  17.466  0.00  0.00     0.074 H 
+BRANCH  14  17
+ATOM     17  C9  EZL d          -7.397   1.297  17.043  0.00  0.00    -0.056 C 
+ATOM     18  H8  EZL d          -6.849   0.870  17.897  0.00  0.00     0.030 H 
+ATOM     19  H9  EZL d          -7.400   0.576  16.212  0.00  0.00     0.030 H 
+ATOM     20  H10 EZL d          -8.432   1.513  17.344  0.00  0.00     0.030 H 
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   4  13
+BRANCH   5  21
+ATOM     21  S1  EZL d          -3.172   8.182  11.511  0.00  0.00     0.281 S 
+ATOM     22  O1  EZL d          -2.303   7.616  10.523  0.00  0.00    -0.199 OA
+ATOM     23  O2  EZL d          -4.450   8.626  11.031  0.00  0.00    -0.199 OA
+BRANCH  21  24
+ATOM     24  N1  EZL d          -2.438   9.240  12.416  0.00  0.00    -0.323 N 
+ATOM     25  H1  EZL d          -1.537   9.585  12.152  0.00  0.00     0.169 HD
+ATOM     26  H2  EZL d          -2.874   9.568  13.255  0.00  0.00     0.169 HD
+ENDBRANCH  21  24
+ENDBRANCH   5  21
+TORSDOF 5
+ENDMDL

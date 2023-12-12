@@ -1,0 +1,1404 @@
+MODEL 1
+REMARK VINA RESULT:      -6.3      0.000      0.000
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -3.222  13.294  17.742  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -4.024  13.943  18.123  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -3.117  13.440  16.657  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -3.605  11.835  18.006  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -4.472  11.799  18.681  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -3.861  11.345  17.055  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.430  11.114  18.649  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -1.895  10.555  17.867  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -1.758  11.867  19.087  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.843  10.137  19.745  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -2.998   9.144  19.296  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -2.038  10.079  20.492  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -4.139  10.572  20.447  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -4.051  11.632  20.726  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -4.979  10.445  19.748  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -4.418   9.750  21.709  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -5.145   8.963  21.460  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -3.476   9.286  22.039  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -4.977  10.578  22.861  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -4.379  10.587  23.967  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -6.019  11.254  22.699  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -1.912  13.689  18.417  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -1.098  13.085  17.991  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -1.994  13.486  19.495  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -1.589  15.156  18.219  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -0.522  15.248  17.966  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -1.790  15.688  19.160  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -2.410  15.811  17.106  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -3.136  15.082  16.718  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -1.733  16.122  16.296  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -3.154  17.026  17.621  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -2.480  17.895  17.615  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -3.497  16.834  18.648  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.347  17.313  16.743  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.618  16.405  16.183  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -4.097  18.118  16.035  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -5.196  17.625  17.368  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -5.9      3.627      7.026
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -3.768  11.268  18.229  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.497  10.571  17.423  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -4.846  11.192  18.432  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -3.454  12.695  17.770  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -3.395  12.723  16.672  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -4.249  13.374  18.112  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.123  13.133  18.362  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -2.104  12.849  19.424  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -1.316  12.610  17.828  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -1.877  14.635  18.259  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -1.789  15.051  19.273  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -0.938  14.805  17.711  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -3.016  15.357  17.524  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -3.038  15.013  16.479  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -3.969  15.104  18.012  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -2.843  16.879  17.539  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -2.926  17.229  18.578  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -1.843  17.120  17.149  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -3.880  17.616  16.697  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -5.066  17.201  16.671  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.551  18.634  16.047  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -3.006  10.876  19.491  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -2.603  11.786  19.959  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -2.177  10.209  19.212  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -3.891  10.163  20.492  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -3.568   9.113  20.559  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -4.929  10.204  20.132  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -3.839  10.776  21.893  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -3.888  11.871  21.807  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -2.894  10.488  22.376  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -4.996  10.294  22.743  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -4.867   9.223  22.959  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -5.937  10.448  22.196  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -5.041  11.063  24.041  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -5.484  10.433  24.825  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -5.653  11.969  23.909  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -4.020  11.349  24.333  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -5.9      2.407      3.042
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -1.830  13.113  18.557  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -1.022  13.474  17.904  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -1.857  13.716  19.476  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.543  11.656  18.934  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -0.485  11.428  18.738  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -1.759  11.504  20.001  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.423  10.737  18.101  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -3.151  10.253  18.769  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -2.957  11.347  17.357  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -1.644   9.651  17.366  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -1.790   9.779  16.283  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -0.576   9.756  17.606  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.104   8.241  17.765  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -3.192   8.168  17.615  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -1.595   7.507  17.123  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.786   7.920  19.229  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -1.068   7.087  19.255  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -1.331   8.810  19.690  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -3.013   7.527  20.045  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -3.441   6.346  19.990  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.579   8.372  20.773  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -3.158  13.278  17.825  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -3.979  13.109  18.537  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.214  12.534  17.018  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -3.309  14.662  17.226  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -4.345  14.998  17.378  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -3.098  14.600  16.148  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -2.368  15.696  17.845  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -1.389  15.636  17.347  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -2.247  15.476  18.917  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -2.918  17.098  17.688  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -2.203  17.707  17.115  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -3.066  17.544  18.682  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.238  17.059  16.958  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.876  17.883  17.308  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -4.738  16.099  17.156  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -4.062  17.165  15.877  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -5.7      3.474      4.193
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -1.795  13.316  18.555  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -1.000  13.640  17.867  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -1.825  13.988  19.425  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.476  11.898  19.040  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -0.506  11.580  18.631  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -1.433  11.888  20.139  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.564  10.947  18.565  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -3.119  10.587  19.443  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -3.245  11.499  17.901  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.024   9.737  17.806  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -2.589   9.626  16.869  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -0.962   9.908  17.576  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.153   8.442  18.620  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -1.538   8.530  19.528  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -3.208   8.305  18.905  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.692   7.213  17.830  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -2.552   6.815  17.271  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -0.910   7.526  17.123  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -1.131   6.101  18.710  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -1.419   6.074  19.934  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -0.401   5.215  18.212  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -3.134  13.399  17.827  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -3.939  13.164  18.538  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.140  12.664  17.010  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -3.380  14.777  17.248  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -4.410  15.080  17.491  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -3.263  14.723  16.156  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -2.423  15.842  17.787  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -1.472  15.779  17.238  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -2.243  15.655  18.856  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -3.001  17.231  17.618  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -2.293  17.853  17.049  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -3.167  17.678  18.609  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.313  17.161  16.876  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.124  17.195  15.793  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -4.944  18.015  17.165  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -4.828  16.223  17.130  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -5.6      2.966      4.231
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -3.017  15.709  17.578  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.899  15.429  18.173  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -3.131  15.330  16.552  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.777  15.064  18.205  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -0.896  15.281  17.584  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -1.623  15.471  19.215  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -1.981  13.559  18.290  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -1.209  13.069  17.679  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -1.869  13.251  19.339  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -3.351  13.103  17.795  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -4.117  13.788  18.189  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -3.360  13.137  16.696  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -3.682  11.674  18.250  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -4.419  11.724  19.065  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -4.112  11.122  17.401  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -2.443  10.924  18.750  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -1.573  11.590  18.661  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -2.598  10.663  19.808  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.155   9.644  17.974  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -1.370   9.678  16.992  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -2.687   8.566  18.321  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -2.925  17.231  17.528  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -1.874  17.518  17.382  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.288  17.640  18.483  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -3.754  17.814  16.401  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -3.091  18.003  15.543  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -4.190  18.763  16.744  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -4.888  16.895  15.945  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -5.847  17.313  16.284  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -4.745  15.899  16.389  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -4.911  16.763  14.437  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -4.134  17.410  14.003  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -5.897  17.071  14.060  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.649  15.332  14.037  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -5.012  14.658  14.826  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -3.568  15.182  13.896  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -5.175  15.112  13.096  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -5.6      2.187      3.140
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -1.753  15.222  18.733  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -0.832  15.468  19.282  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -2.568  15.040  19.447  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.514  13.944  17.923  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -1.890  14.082  16.899  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -0.436  13.726  17.891  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.248  12.786  18.583  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -1.584  11.909  18.586  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -2.486  13.069  19.619  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -3.545  12.407  17.875  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -4.214  13.281  17.869  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -3.313  12.117  16.840  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -4.261  11.240  18.569  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -5.256  11.578  18.897  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -4.374  10.415  17.849  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -3.488  10.728  19.788  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -2.638  11.402  19.970  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -4.160  10.743  20.660  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.952   9.311  19.616  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -3.319   8.408  20.411  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -2.163   9.048  18.681  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -2.129  16.411  17.855  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -1.238  16.740  17.302  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -2.485  17.229  18.498  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -3.219  16.062  16.862  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -3.627  15.074  17.124  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -2.775  16.020  15.857  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -4.368  17.071  16.843  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -4.212  17.808  17.644  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -5.316  16.540  17.014  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -4.439  17.793  15.514  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -5.486  18.057  15.298  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -4.056  17.134  14.721  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -3.607  19.051  15.561  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.184  19.854  16.044  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -3.342  19.355  14.537  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -2.689  18.862  16.137  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -5.5      4.326      7.658
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -2.688  10.969  18.060  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.411  11.254  17.282  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -3.221  10.508  18.904  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.981  12.234  18.558  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -1.983  12.247  19.658  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -0.943  12.241  18.194  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.712  13.460  18.033  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -2.906  13.316  16.960  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -3.668  13.551  18.569  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -1.930  14.757  18.213  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -2.165  15.179  19.202  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -0.854  14.534  18.157  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.278  15.795  17.136  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -1.585  16.645  17.225  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -2.161  15.330  16.145  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -3.713  16.312  17.271  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -4.399  15.454  17.221  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -3.815  16.806  18.250  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -4.105  17.308  16.185  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -3.654  18.481  16.227  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -4.859  16.953  15.251  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -1.719   9.946  17.476  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -0.703  10.181  17.824  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -1.755  10.010  16.378  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -2.066   8.532  17.894  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.373   7.839  17.393  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -3.095   8.316  17.575  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -1.968   8.306  19.404  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -2.855   8.737  19.890  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -1.063   8.804  19.784  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -1.893   6.829  19.731  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -2.658   6.289  19.154  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -2.075   6.685  20.806  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -0.529   6.289  19.380  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d           0.145   7.123  19.135  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -0.612   5.618  18.511  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -0.124   5.730  20.237  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -5.3      3.844      4.485
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -2.758  11.802  18.978  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -2.507  11.276  19.911  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -3.762  12.243  19.064  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -2.764  10.787  17.830  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -3.771  10.358  17.724  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -2.481  11.291  16.894  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -1.768   9.679  18.133  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -0.778   9.992  17.771  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -1.731   9.532  19.222  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.123   8.347  17.478  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -2.990   8.497  16.816  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -1.264   8.003  16.883  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.471   7.269  18.514  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -3.361   7.591  19.076  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -2.691   6.328  17.987  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.326   7.025  19.503  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -0.688   7.920  19.525  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -1.757   6.858  20.502  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -0.461   5.822  19.143  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -0.712   5.167  18.100  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d           0.501   5.499  19.877  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -1.749  12.925  18.763  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -0.888  12.527  18.206  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -1.413  13.293  19.743  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -2.342  14.082  17.984  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -3.396  14.198  18.280  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -2.286  13.845  16.912  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -1.622  15.409  18.228  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -0.706  15.437  17.619  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -1.357  15.484  19.292  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -2.501  16.584  17.853  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -1.930  17.277  17.218  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -2.821  17.103  18.768  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -3.717  16.103  17.100  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.580  16.734  17.357  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -3.931  15.059  17.377  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -3.526  16.164  16.019  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -5.0      3.879      4.789
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -3.686  10.761  19.025  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.723  11.437  19.891  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -4.680  10.321  18.860  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -2.693   9.633  19.325  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -2.437   9.110  18.392  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -1.781  10.056  19.771  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -3.327   8.651  20.299  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -3.198   9.041  21.319  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -4.400   8.576  20.069  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.719   7.253  20.235  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -2.648   6.850  21.257  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -3.373   6.609  19.631  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -1.317   7.263  19.608  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -1.182   8.206  19.057  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -0.569   7.199  20.413  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.105   6.092  18.644  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -0.166   6.257  18.096  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -1.028   5.165  19.232  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.234   5.929  17.631  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -2.902   4.864  17.613  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -2.499   6.856  16.832  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -3.298  11.569  17.790  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -4.188  11.697  17.156  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -2.527  11.019  17.233  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -2.756  12.937  18.154  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.700  12.986  17.851  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -2.831  13.064  19.244  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -3.508  14.085  17.479  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -4.490  14.203  17.960  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -3.648  13.847  16.414  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -2.740  15.385  17.597  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -3.351  16.121  18.141  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -2.515  15.767  16.591  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -1.449  15.158  18.345  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -0.910  14.310  17.897  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -1.670  14.935  19.400  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -0.826  16.062  18.284  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 10
+REMARK VINA RESULT:      -5.0      4.024      7.334
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -1.878  10.094  19.244  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -2.702   9.776  19.900  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -0.917   9.808  19.697  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.922  11.619  19.106  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -2.017  12.075  20.102  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -0.996  11.971  18.629  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -3.116  12.013  18.250  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -3.104  11.403  17.335  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -4.035  11.805  18.818  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -3.117  13.485  17.850  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -3.318  13.560  16.771  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -3.911  14.004  18.407  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -1.774  14.166  18.153  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -1.375  13.759  19.094  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -1.074  13.947  17.333  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.913  15.685  18.292  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -2.347  15.907  19.278  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -0.911  16.135  18.223  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.799  16.314  17.221  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -2.503  16.169  16.008  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.819  16.959  17.551  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -2.018   9.379  17.904  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -1.330   9.842  17.182  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.052   9.490  17.548  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -1.694   7.903  18.010  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.701   7.619  19.073  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -0.690   7.735  17.593  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -2.686   7.009  17.264  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -2.130   6.338  16.593  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -3.364   7.642  16.671  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -3.505   6.178  18.229  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -4.001   6.842  18.951  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -2.841   5.484  18.764  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.549   5.389  17.477  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.055   4.715  16.761  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -5.210   6.080  16.933  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -5.143   4.796  18.188  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 11
+REMARK VINA RESULT:      -4.9      3.477      6.813
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -1.792   8.682  17.750  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -0.941   8.399  18.386  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -1.810   8.044  16.854  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.612  10.139  17.311  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -0.550  10.417  17.388  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -1.945  10.252  16.269  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.441  11.042  18.211  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -3.419  11.204  17.735  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -2.582  10.536  19.177  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -1.797  12.402  18.466  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -1.599  12.504  19.544  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -0.848  12.454  17.913  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.698  13.560  18.015  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -2.995  13.392  16.969  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -3.595  13.580  18.652  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.992  14.917  18.116  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -1.892  15.180  19.179  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -0.992  14.824  17.666  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.738  16.042  17.407  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -2.786  17.183  17.934  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.287  15.833  16.302  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -3.082   8.461  18.533  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -3.869   8.137  17.836  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.377   9.409  19.005  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -2.919   7.408  19.610  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.856   7.128  19.668  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -3.515   6.527  19.331  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -3.371   7.881  20.993  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -2.510   7.866  21.677  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -4.150   7.201  21.369  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -3.931   9.287  20.933  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -4.604   9.373  20.066  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -3.104  10.003  20.828  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.700   9.593  22.194  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -3.995   9.786  23.016  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -5.339   8.735  22.453  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -5.328  10.482  22.034  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 12
+REMARK VINA RESULT:      -4.9      4.255      7.721
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -2.966   9.911  19.083  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -4.054  10.064  19.135  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -2.532  10.015  20.089  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -2.362  10.986  18.174  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -1.681  10.515  17.450  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -3.167  11.505  17.635  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -1.590  11.986  19.021  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -2.003  11.971  20.040  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -0.534  11.677  19.049  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -1.662  13.415  18.491  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -1.581  14.112  19.338  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -0.823  13.580  17.799  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.978  13.688  17.748  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -2.862  13.382  16.698  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -3.779  13.096  18.216  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -3.371  15.168  17.790  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -4.367  15.252  18.248  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -2.637  15.706  18.409  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -3.414  15.823  16.414  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -3.277  17.069  16.315  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.573  15.121  15.389  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -2.696   8.497  18.580  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -2.278   8.556  17.564  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.645   7.942  18.553  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -1.720   7.753  19.468  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -2.112   7.755  20.497  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -0.755   8.279  19.443  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -1.494   6.302  19.039  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -1.351   6.269  17.949  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -2.376   5.705  19.311  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -0.273   5.716  19.717  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -0.558   4.795  20.247  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d           0.128   6.445  20.437  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d           0.786   5.395  18.691  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d           0.489   5.807  17.716  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d           0.897   4.303  18.609  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d           1.743   5.839  19.001  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 13
+REMARK VINA RESULT:      -4.6      1.694      3.419
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -2.681   8.389  18.002  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.520   8.892  18.505  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -3.066   7.772  17.177  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.980   7.476  19.012  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -2.168   6.424  18.749  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -0.898   7.670  18.993  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.522   7.756  20.405  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -2.606   6.801  20.945  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -1.812   8.412  20.930  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -3.891   8.430  20.400  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -4.148   8.704  19.365  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -4.637   7.721  20.787  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -3.913   9.697  21.268  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -2.892  10.102  21.330  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -4.573  10.439  20.794  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -4.421   9.419  22.686  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -5.194   8.638  22.633  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -3.578   9.059  23.294  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -5.019  10.645  23.368  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -5.819  11.379  22.733  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -4.724  10.910  24.555  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -1.750   9.451  17.425  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -2.089   9.706  16.411  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -0.731   9.041  17.379  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -1.733  10.710  18.267  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -0.793  11.248  18.072  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -1.778  10.422  19.327  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -2.902  11.652  17.971  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -3.747  11.392  18.624  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -3.201  11.534  16.919  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -2.514  13.096  18.214  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -1.496  13.268  17.832  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -2.541  13.302  19.294  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -3.475  14.018  17.506  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.454  13.525  17.412  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -3.087  14.254  16.504  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -3.586  14.947  18.085  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 14
+REMARK VINA RESULT:      -4.5      4.423      6.284
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -3.107  10.889  18.033  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.517  10.471  17.102  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -2.714  11.898  17.841  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.956   9.995  18.506  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -1.004  10.537  18.402  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -2.110   9.724  19.560  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -1.917   8.734  17.657  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -2.305   8.975  16.657  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -0.872   8.401  17.575  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.745   7.588  18.233  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -3.785   7.928  18.354  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -2.716   6.741  17.532  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.214   7.122  19.597  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -2.179   7.986  20.277  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -2.899   6.364  20.003  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -0.811   6.516  19.496  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -0.507   6.515  18.439  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -0.117   7.144  20.075  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -0.727   5.088  20.025  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -1.769   4.517  20.435  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d           0.371   4.487  20.037  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -4.231  10.989  19.060  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -5.060  10.342  18.742  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -4.577  12.032  19.106  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -3.778  10.563  20.442  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -3.055  11.303  20.817  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -3.289   9.581  20.361  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -4.925  10.452  21.448  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -5.745   9.876  20.995  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -5.281  11.462  21.699  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -4.474   9.758  22.716  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -3.401   9.526  22.641  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -5.044   8.826  22.843  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.709  10.653  23.908  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.984  10.039  24.779  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -5.524  11.357  23.684  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -3.790  11.214  24.132  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 15
+REMARK VINA RESULT:      -4.3      3.754      7.077
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -3.340   8.299  21.091  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -3.749   7.671  21.896  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -2.407   8.771  21.433  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -4.354   9.398  20.763  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -4.745   9.246  19.746  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -5.184   9.359  21.483  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -3.671  10.755  20.847  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -4.426  11.536  20.675  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -3.248  10.870  21.856  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.549  10.934  19.829  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -1.637  11.251  20.358  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -2.367   9.972  19.329  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.897  11.988  18.767  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -3.175  11.473  17.835  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -3.750  12.584  19.125  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.723  12.929  18.479  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -1.054  12.930  19.352  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -1.179  12.550  17.601  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.153  14.365  18.197  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -1.328  15.301  18.352  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.316  14.606  17.802  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -3.027   7.411  19.891  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -3.471   7.861  18.992  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.467   6.418  20.060  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -1.535   7.255  19.673  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.097   6.798  20.573  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -1.099   8.252  19.518  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -1.188   6.380  18.467  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -1.145   5.329  18.786  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -0.207   6.684  18.074  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -2.224   6.523  17.372  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -1.992   7.412  16.766  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -3.219   6.638  17.826  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -2.218   5.301  16.488  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -3.009   4.608  16.813  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -1.240   4.800  16.561  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -2.399   5.601  15.446  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 16
+REMARK VINA RESULT:      -4.3      4.312      7.551
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -0.854   6.741  19.180  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -0.261   6.453  20.060  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -0.271   7.432  18.554  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -2.120   7.462  19.657  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -3.008   6.925  19.291  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -2.134   7.489  20.756  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.125   8.882  19.113  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -1.145   9.337  19.318  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -2.288   8.839  18.026  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -3.207   9.765  19.730  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -4.025   9.884  19.003  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -3.590   9.275  20.636  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.672  11.154  20.106  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -3.523  11.841  20.225  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -2.126  11.078  21.059  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -1.727  11.720  19.040  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -0.777  11.989  19.525  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -1.545  10.939  18.286  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -2.278  12.955  18.335  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -1.591  14.007  18.300  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -3.401  12.914  17.784  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -1.163   5.488  18.368  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -1.684   4.766  19.014  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -0.218   5.050  18.018  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -2.037   5.789  17.167  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.418   5.727  16.260  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -2.433   6.810  17.272  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -3.215   4.824  17.017  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -2.972   3.880  17.527  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -3.387   4.631  15.948  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -4.476   5.404  17.623  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -5.317   5.245  16.932  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -4.337   6.482  17.789  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -4.776   4.731  18.940  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -4.518   5.410  19.766  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -4.181   3.809  19.024  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -5.846   4.483  18.989  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 17
+REMARK VINA RESULT:      -4.2      4.362      7.888
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -2.148   7.221  20.094  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -1.716   7.583  21.039  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d          -1.345   7.062  19.360  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -3.104   8.288  19.551  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -2.545   8.996  18.921  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -3.890   7.806  18.952  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -3.737   9.035  20.715  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -4.722   8.589  20.921  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -3.091   8.918  21.597  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -3.928  10.525  20.449  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -4.781  10.886  21.043  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -3.017  11.060  20.755  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -4.199  10.816  18.965  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -4.078   9.883  18.394  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -5.231  11.180  18.858  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -3.242  11.869  18.397  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -3.535  12.082  17.359  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -3.336  12.786  18.999  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -1.782  11.432  18.408  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -0.986  11.949  19.233  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -1.384  10.554  17.609  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -2.843   5.888  20.354  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -3.277   5.525  19.411  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -3.645   6.044  21.090  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -1.885   4.842  20.887  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -2.470   4.053  21.384  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -1.219   5.320  21.620  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -1.026   4.196  19.799  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -1.412   4.494  18.813  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -1.081   3.102  19.899  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d           0.420   4.630  19.916  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d           1.062   3.739  19.993  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d           0.542   5.249  20.817  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d           0.821   5.432  18.703  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -0.022   6.062  18.384  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d           1.097   4.748  17.885  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d           1.682   6.069  18.953  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL
+MODEL 18
+REMARK VINA RESULT:      -3.9      4.098      7.288
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_3  and  C2_4 
+REMARK    2  A    between atoms: C2_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  C5_7 
+REMARK    5  A    between atoms: C5_7  and  C6_8 
+REMARK    6  A    between atoms: C6_8  and  C7_9 
+REMARK    7  A    between atoms: C7_9  and  C8_10 
+REMARK    8  A    between atoms: C8_10  and  C9_11 
+REMARK    9  A    between atoms: C9_11  and  C10_12 
+REMARK   10  A    between atoms: C10_12  and  C11_13 
+REMARK   11  A    between atoms: C11_13  and  C12_14 
+ROOT
+ATOM      1  C7  DAO d          -0.973   6.430  18.206  0.00  0.00    -0.065 C 
+ATOM      2  H11 DAO d          -0.838   6.634  19.278  0.00  0.00     0.033 H 
+ATOM      3  H12 DAO d           0.008   6.419  17.708  0.00  0.00     0.033 H 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C6  DAO d          -1.819   7.553  17.597  0.00  0.00    -0.065 C 
+ATOM      5  H9  DAO d          -1.218   8.109  16.863  0.00  0.00     0.033 H 
+ATOM      6  H10 DAO d          -2.698   7.120  17.098  0.00  0.00     0.033 H 
+BRANCH   4   7
+ATOM      7  C5  DAO d          -2.274   8.496  18.701  0.00  0.00    -0.065 C 
+ATOM      8  H7  DAO d          -3.303   8.229  18.983  0.00  0.00     0.033 H 
+ATOM      9  H8  DAO d          -1.610   8.364  19.567  0.00  0.00     0.033 H 
+BRANCH   7  10
+ATOM     10  C4  DAO d          -2.250   9.966  18.292  0.00  0.00    -0.065 C 
+ATOM     11  H5  DAO d          -1.242  10.216  17.927  0.00  0.00     0.033 H 
+ATOM     12  H6  DAO d          -2.981  10.122  17.485  0.00  0.00     0.033 H 
+BRANCH  10  13
+ATOM     13  C3  DAO d          -2.598  10.896  19.463  0.00  0.00    -0.056 C 
+ATOM     14  H3  DAO d          -1.934  10.664  20.309  0.00  0.00     0.033 H 
+ATOM     15  H4  DAO d          -2.440  11.938  19.148  0.00  0.00     0.033 H 
+BRANCH  13  16
+ATOM     16  C2  DAO d          -4.052  10.734  19.919  0.00  0.00     0.016 C 
+ATOM     17  H1  DAO d          -4.549  11.713  19.851  0.00  0.00     0.049 H 
+ATOM     18  H2  DAO d          -4.552  10.021  19.246  0.00  0.00     0.049 H 
+BRANCH  16  19
+ATOM     19  C1  DAO d          -4.186  10.222  21.349  0.00  0.00     0.172 C 
+ATOM     20  O1  DAO d          -4.239  11.043  22.300  0.00  0.00    -0.648 OA
+ATOM     21  O2  DAO d          -4.255   8.992  21.571  0.00  0.00    -0.648 OA
+ENDBRANCH  16  19
+ENDBRANCH  13  16
+ENDBRANCH  10  13
+ENDBRANCH   7  10
+ENDBRANCH   4   7
+ENDBRANCH   1   4
+BRANCH   1  22
+ATOM     22  C8  DAO d          -1.618   5.057  18.047  0.00  0.00    -0.065 C 
+ATOM     23  H13 DAO d          -2.385   4.934  18.825  0.00  0.00     0.033 H 
+ATOM     24  H14 DAO d          -0.844   4.286  18.170  0.00  0.00     0.033 H 
+BRANCH  22  25
+ATOM     25  C9  DAO d          -2.266   4.887  16.688  0.00  0.00    -0.065 C 
+ATOM     26  H15 DAO d          -1.612   4.260  16.065  0.00  0.00     0.033 H 
+ATOM     27  H16 DAO d          -2.373   5.880  16.226  0.00  0.00     0.033 H 
+BRANCH  25  28
+ATOM     28  C10 DAO d          -3.647   4.232  16.754  0.00  0.00    -0.065 C 
+ATOM     29  H17 DAO d          -3.557   3.254  17.248  0.00  0.00     0.033 H 
+ATOM     30  H18 DAO d          -4.027   4.092  15.731  0.00  0.00     0.033 H 
+BRANCH  28  31
+ATOM     31  C11 DAO d          -4.623   5.091  17.530  0.00  0.00    -0.069 C 
+ATOM     32  H19 DAO d          -5.439   5.407  16.864  0.00  0.00     0.032 H 
+ATOM     33  H20 DAO d          -4.099   5.978  17.916  0.00  0.00     0.032 H 
+BRANCH  31  34
+ATOM     34  C12 DAO d          -5.197   4.308  18.686  0.00  0.00    -0.077 C 
+ATOM     35  H21 DAO d          -5.756   3.443  18.301  0.00  0.00     0.027 H 
+ATOM     36  H22 DAO d          -5.874   4.954  19.266  0.00  0.00     0.027 H 
+ATOM     37  H23 DAO d          -4.380   3.958  19.334  0.00  0.00     0.027 H 
+ENDBRANCH  31  34
+ENDBRANCH  28  31
+ENDBRANCH  25  28
+ENDBRANCH  22  25
+ENDBRANCH   1  22
+TORSDOF 11
+ENDMDL

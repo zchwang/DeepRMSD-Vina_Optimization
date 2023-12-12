@@ -1,0 +1,5 @@
+# id           rec_fpath                         pose_fpath                       ref_lig_fpath
+3dd0 samples/3dd0/3dd0_protein_noHETATM.pdb samples/3dd0/3dd0_decoys.pdbqt samples/3dd0/3dd0_ligand.mol2
+1bcu samples/1bcu/1bcu_protein_noHETATM.pdb samples/1bcu/1bcu_decoys.pdbqt samples/1bcu/1bcu_ligand.mol2
+1pxn samples/1pxn/1pxn_protein_noHETATM.pdb samples/1pxn/1pxn_decoys.pdbqt samples/1pxn/1pxn_ligand.mol2
+3ueu samples/3ueu/3ueu_protein_noHETATM.pdb samples/3ueu/3ueu_decoys.pdbqt samples/3ueu/3ueu_ligand.mol2

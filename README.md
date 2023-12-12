@@ -5,13 +5,27 @@ This algorithm is based on deep learning and a classical scoring function (Vina 
 
 ## Install 
 
+    pytorch >= 1.10
     conda install -c conda-forge spyrmsd
-    conda install pytorch
     conda install numpy pandas
 
 ## Contact
 Liangzhen Zheng, Shanghai Zelixir Biotech Company Ltd, astrozheng@gmail.com</p>
 Zechen Wang, Shandong University, wangzch97@163.com</p>
+
+## Citation
+If you find our scripts useful, please consider citing the following paper:
+
+    @article{wang2023fully,
+      title={A fully differentiable ligand pose optimization framework guided by deep learning and a traditional scoring function},
+      author={Wang, Zechen and Zheng, Liangzhen and Wang, Sheng and Lin, Mingzhi and Wang, Zhihao and Kong, Adams Wai-Kin and Mu, Yuguang and Wei, Yanjie and Li, Weifeng},
+      journal={Briefings in Bioinformatics},
+      volume={24},
+      number={1},
+      pages={bbac520},
+      year={2023},
+      publisher={Oxford University Press}
+      }
 
 ## Run optimization 
 ### 1. Prepare structural files for proteins and ligands.
@@ -36,8 +50,8 @@ Finally, the program outputs the optimized ligand conformation ("final_optimized
 ### The scoring components are placed in the "scoring" directory. You can execute the following command to perform scoring using DeepRMSD+Vina.
 
     python scripts/run.py \
-	-rec_fpath $rec_fpath \  
-	-pose_fpath $pose_fpath \
+	-rec_fpath $rec_fpath \   
+	-pose_fpath $pose_fpath \ 
 	-mean_std_file ../models/r6-r1_0.3-2.0nm_train_mean_std.csv \
 	-model ../models/bestmodel_cpu.pth \
 	-out_fpath $out_fpath
@@ -49,3 +63,23 @@ where rec_fpath, pose_fpath, and out_fpath represent the paths for the input pro
 Here is a simple example to test this process, as follows:
 
     bash run_scoring.sh samples/1bcu_protein_noHETATM.pdbqt samples/1bcu_decoys.pdbqt out.csv
+
+## Retrainig DeepRMSD
+### 1. Generate datasets
+
+Firstly, generate the ".pkl" file containing features and labels in advance before training. We provide the "generate_features.py" script in the "retrain" directory for creating the required features and labels for DeepRMSD. You can run:
+
+    python generate_features.py -inp inputs.dat -out data_label.pkl 
+
+each line in "inputs.dat" file represents a protein-ligand pair, specifying the protein-ligand id, protein file, poses file, and crystal ligand file, respectively. 
+
+### 2. Training
+
+We provide the "train.py" script in the "trtrain" directory. You can run the following command to retrain DeepRMSD:
+
+    python train.py \
+	-train_file $train_file \
+	-valid_file $valid_file \
+	-device cuda:0
+
+"train_file" and "valid_file" represent the training set and validation set, respectively, generated in the previous step.

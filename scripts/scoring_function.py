@@ -168,51 +168,36 @@ class ScoringFunction(object):
         dist_nm = self.dist / 10
        
         # Generate the feature matrix for predict RMSD by DeepRMSD.
-        #t = time.time()
         dist_nm_1 = (dist_nm <= self.pre_cut) * self.pre_cut
         dist_nm_2 = dist_nm * (dist_nm > self.pre_cut) * (dist_nm < self.cutoff)
-        #print("cost time in cutoff dist:", time.time() - t)
 
         # r6-term
-        #t = time.time()
         features_matrix_1 = torch.pow(dist_nm_1 + (dist_nm_1 == 0.) * 1., -6) - (dist_nm_1 == 0.) * 1.
         features_matrix_2 = torch.pow(dist_nm_2 + (dist_nm_2 == 0.) * 1., -6) - (dist_nm_2 == 0.) * 1.
         features_1 = (features_matrix_1 + features_matrix_2).reshape(-1, 1)
-        #print("cost time in r6:", time.time() - t)
 
         # r1-term
-        #t = time.time()
         features_matrix_1 = torch.pow(dist_nm_1 + (dist_nm_1 == 0.) * 1., -1) - (dist_nm_1 == 0.) * 1.
         features_matrix_2 = torch.pow(dist_nm_2 + (dist_nm_2 == 0.) * 1., -1) - (dist_nm_2 == 0.) * 1.
         features_2 = (features_matrix_1 + features_matrix_2).reshape(-1, 1)
-        #print("cost time in r1:", time.time() - t)
 
         # Concatenate the r6 and r1 feature matrices together
-        #t = time.time()
         features = torch.cat((features_1, features_2), axis=1)
         features = features.reshape(self.number_of_poses, 1, -1)
-        #print("cost time in cat features:", time.time() - t)
 
         # atom type combination
-        #t = time.time()
         residues_heavy_atoms_pairs = [get_residue(x) for x in self.residues_heavy_atoms_pairs]
         lig_heavy_atoms_element = [get_elementtype(x) for x in self.lig_heavy_atoms_element]
-        #print("cost time in map res-atom types:", time.time() - t)
 
-        #t = time.time()
         rec_lig_ele = ["_".join(x) for x in
                        list(itertools.product(residues_heavy_atoms_pairs, lig_heavy_atoms_element))]
-        #print("cost time in res-atom pairs:", time.time() - t)
 
-        #t = time.time()
         rec_lig_atoms_combines = []
         for i in rec_lig_ele:
             rec_lig_atoms_combines.append("r6_" + i)
             rec_lig_atoms_combines.append("r1_" + i)
-        #print("cost time in rec-lig combine:", time.time() - t)
 
         # encode each atom pair type into a matrix
-        # t = time.time()
         if not "init_matrix" in globals().keys():
             global init_matrix
         init_matrix = torch.zeros(len(rec_lig_atoms_combines), 1470)
@@ -220,31 +205,24 @@ class ScoringFunction(object):
         for num, c in enumerate(rec_lig_atoms_combines):
             key_num = keys.index(c)
             init_matrix[num][key_num] = 1
-        #print("cost time in init matrix:", time.time() - t)
 
         init_matrix = init_matrix.expand(self.number_of_poses, init_matrix.shape[0], init_matrix.shape[1])
 
         # generate the final energy matrix
-        #t = time.time()
         matrix = torch.matmul(features, init_matrix)
         self.origin_energy = matrix.reshape(-1, 1470)
-        #print("cost time in get features:", time.time() - t)
 
         # Standardize features
         scaler = pd.read_csv(self.mean_std_file, index_col=0)
         means = torch.from_numpy(scaler.values[0, :].astype(np.float32))
         stds = (torch.from_numpy(scaler.values[1, :].astype(np.float32)) + 1e-6)
 
-        #t = time.time()
         matrix = (self.origin_energy - means) / stds
         self.features_matrix = matrix
-        #print("cost time in scaler features:", time.time() - t)
 
         # predict the RMSD
         model = torch.load(self.model_fpath)
-        #t = time.time()
         self.pred_rmsd = model(self.features_matrix)
-        #print("cost time in pred rmsd:", time.time() - t)
 
         return self
 
@@ -391,12 +369,10 @@ class ScoringFunction(object):
         all_selected_lig_atom_indices = list(set(all_selected_lig_atom_indices))
 
         # Update the xs atom type of heavy atoms for receptor.
-        t = time.time()
         for i in all_selected_rec_atom_indices:
             i = int(i)
             self.receptor.update_rec_xs(self.rec_heavy_atoms_xs_types[i], i,
                                         self.rec_index_to_series_dict[i], self.heavy_atoms_residues_indices[i])
-        #print("cost time in update xs:", time.time() - t)
 
         # is_hydrophobic
         rec_atom_is_hydrophobic_dict = dict(zip(all_selected_rec_atom_indices,
@@ -499,24 +475,15 @@ class ScoringFunction(object):
         return self
 
     def process(self):
-        t = time.time()
         self.generate_pldist_mtrx()
-        #print("cost time in generate pldist:", time.time() - t)  # 0.41s
 
-        t = time.time()
         self.cal_RMSD()
-        #print("cost time in cal RMSD:", time.time() - t)  # 21.13s
-
-        t = time.time()
         self.cal_vina()
-        #print("cost time in cal vina:", time.time() - t)
 
-        t = time.time()
         if self.ligand.number_of_frames == 0:
             self.intra_repulsive_term = 0
         else:
             self.cal_intra_repulsion()
-        #print("cost time in cal intra:", time.time() - t)
 
         rmsd_vina = self.weight_1 * self.pred_rmsd + self.weight_2 * self.vina_inter_energy
 
@@ -527,8 +494,6 @@ class ScoringFunction(object):
             combined_score = self.alpha * rmsd_vina + ((1 - self.alpha) / 2) * (
                 torch.log(self.intra_repulsive_term) + torch.log(self.inter_repulsive_term))
     
-       
-
         return self.pred_rmsd, self.vina_inter_energy, rmsd_vina, combined_score
 
 class VinaScoreCore(object):
