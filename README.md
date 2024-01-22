@@ -75,7 +75,7 @@ each line in "inputs.dat" file represents a protein-ligand pair, specifying the 
 
 ### 2. Training
 
-We provide the "train.py" script in the "trtrain" directory. You can run the following command to retrain DeepRMSD:
+We provide the "train.py" script in the "retrain" directory. You can run the following command to retrain DeepRMSD:
 
     python train.py \
 	-train_file $train_file \
